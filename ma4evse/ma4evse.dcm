@@ -1,3 +1,20 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP AO3402
+D 30V N-Channel MOSFET
+K transistor NMOS N-MOS N-MOSFET
+F http://www.aosmd.com/pdfs/datasheet/AO3402.pdf
+$ENDCMP
+#
+$CMP CH340C
+D USB to serial
+K UART
+F https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF
+$ENDCMP
+#
+$CMP FiPy
+D PyCom Wifi, BLE, LoRA, SigFox devkit
+F https://docs.pycom.io/gitbook/assets/specsheets/Pycom_002_Specsheets_FiPy_v2.pdf
+$ENDCMP
+#
 #End Doc Library
