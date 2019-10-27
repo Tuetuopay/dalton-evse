@@ -750,9 +750,9 @@ Wire Wire Line
 	6750 5600 6350 5600
 Text Label 6350 5600 0    50   ~ 0
 TOUCH
-Text Notes 9500 1200 0    50   ~ 0
-NFC LEDs
 Text Notes 9500 2300 0    50   ~ 0
+NFC LEDs
+Text Notes 9500 1200 0    50   ~ 0
 Touch LEDs
 $Comp
 L Device:C_Small C1
