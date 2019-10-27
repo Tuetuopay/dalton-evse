@@ -1206,7 +1206,7 @@ U 1 1 5DB58C23
 P 6850 3600
 F 0 "U2" H 6900 3750 50  0000 C CNN
 F 1 "NFCv4" H 6950 3650 50  0000 C CNN
-F 2 "ma4evse:nfc_v4" H 6850 3600 50  0001 C CNN
+F 2 "ma4evse:nfc_v4_mirror" H 6850 3600 50  0001 C CNN
 F 3 "http://www.elechouse.com/elechouse/images/product/PN532_module_V3/PN532_%20Manual_V3.pdf" H 6850 3600 50  0001 C CNN
 	1    6850 3600
 	1    0    0    -1  
