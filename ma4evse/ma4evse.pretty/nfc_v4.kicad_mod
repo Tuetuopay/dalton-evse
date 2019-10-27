@@ -1,4 +1,4 @@
-(module nfc_v4 (layer F.Cu) (tedit 5DB4ED11)
+(module nfc_v4 (layer F.Cu) (tedit 5DB5A43F)
   (fp_text reference REF** (at -13 -21) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -74,7 +74,6 @@
   (pad 12 thru_hole oval (at -14.95 3.81) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
   (pad 11 thru_hole oval (at -14.95 1.27) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
   (pad 9 thru_hole rect (at -14.95 -3.81) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
-  (pad 10 thru_hole oval (at -3.465 10.5 270) (size 1 1) (drill 0.65) (layers *.Cu *.Mask))
   (pad 14 thru_hole oval (at 6.695 10.5 270) (size 1 1) (drill 0.65) (layers *.Cu *.Mask))
   (pad 13 thru_hole rect (at 7.965 10.5 270) (size 1 1) (drill 0.65) (layers *.Cu *.Mask))
   (pad 15 thru_hole oval (at 5.425 10.5 270) (size 1 1) (drill 0.65) (layers *.Cu *.Mask))
