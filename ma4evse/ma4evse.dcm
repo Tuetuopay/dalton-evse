@@ -17,4 +17,8 @@ D PyCom Wifi, BLE, LoRA, SigFox devkit
 F https://docs.pycom.io/gitbook/assets/specsheets/Pycom_002_Specsheets_FiPy_v2.pdf
 $ENDCMP
 #
+$CMP NFCv4
+F http://www.elechouse.com/elechouse/images/product/PN532_module_V3/PN532_%20Manual_V3.pdf
+$ENDCMP
+#
 #End Doc Library
