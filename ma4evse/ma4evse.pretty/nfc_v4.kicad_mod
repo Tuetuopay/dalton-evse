@@ -1,4 +1,4 @@
-(module nfc_v4 (layer F.Cu) (tedit 5DB5A43F)
+(module nfc_v4 (layer F.Cu) (tedit 5DB62E57)
   (fp_text reference REF** (at -13 -21) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -84,4 +84,24 @@
   (pad 20 thru_hole oval (at -0.925 10.5 270) (size 1 1) (drill 0.65) (layers *.Cu *.Mask))
   (pad 21 thru_hole oval (at -2.195 10.5 270) (size 1 1) (drill 0.65) (layers *.Cu *.Mask))
   (pad 22 thru_hole oval (at -3.465 10.5 270) (size 1 1) (drill 0.65) (layers *.Cu *.Mask))
+  (model ${KIPRJMOD}/../ma4evse/3d/nfc_v4.step
+    (offset (xyz 0 0 2.5))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x08_P2.54mm_Vertical.step
+    (offset (xyz -6.24 13.7 2.5))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 -180 -90))
+  )
+  (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step
+    (offset (xyz -14.95 3.81 2.5))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 -180 0))
+  )
+  (model ${KISYS3DMOD}/Connector_PinHeader_1.27mm.3dshapes/PinHeader_1x10_P1.27mm_Vertical.step
+    (offset (xyz 7.965 -10.5 2.5))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 -180 90))
+  )
 )
