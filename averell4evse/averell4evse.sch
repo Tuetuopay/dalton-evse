@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:averell4evse-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -718,8 +719,8 @@ Wire Wire Line
 Wire Wire Line
 	3050 4350 3050 4300
 Wire Wire Line
-	10050 5200 10450 5200
-Text Label 10450 5200 2    50   ~ 0
+	10050 5200 10900 5200
+Text Label 10900 5200 2    50   ~ 0
 ~RST
 $Comp
 L Connector_Generic:Conn_01x12 J2
@@ -968,7 +969,7 @@ To logo LEDs
 Text Notes 2300 5100 0    50   ~ 0
 The LED driver has no chip select pin,\nthus its SOUT pin never goes high-Z.\nFor a shared MISO, inactive devices must\nput their MISO pin in high-Z, which we\nsimulate here with the buffer chip.
 Wire Wire Line
-	10050 4300 10250 4300
+	10050 4300 10450 4300
 $Comp
 L ma4evse:NFCv4 U2
 U 1 1 5DB58C23
@@ -980,160 +981,28 @@ F 3 "http://www.elechouse.com/elechouse/images/product/PN532_module_V3/PN532_%20
 	1    8850 4200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5DEAD7B1
-P 10250 4300
-F 0 "TP1" V 10250 4550 50  0000 C CNN
-F 1 "AUX1" V 10250 4800 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10450 4300 50  0001 C CNN
-F 3 "~" H 10450 4300 50  0001 C CNN
-	1    10250 4300
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	10050 4400 10250 4400
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5DF04769
-P 10250 4400
-F 0 "TP2" V 10250 4650 50  0000 C CNN
-F 1 "AUX2" V 10250 4900 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10450 4400 50  0001 C CNN
-F 3 "~" H 10450 4400 50  0001 C CNN
-	1    10250 4400
-	0    1    1    0   
-$EndComp
+	10050 4400 10450 4400
 Wire Wire Line
-	10050 4500 10250 4500
-$Comp
-L Connector:TestPoint TP3
-U 1 1 5DF0C8F8
-P 10250 4500
-F 0 "TP3" V 10250 4750 50  0000 C CNN
-F 1 "DBG_RXD" V 10250 5000 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10450 4500 50  0001 C CNN
-F 3 "~" H 10450 4500 50  0001 C CNN
-	1    10250 4500
-	0    1    1    0   
-$EndComp
+	10050 4500 10450 4500
 Wire Wire Line
-	10050 4600 10250 4600
-$Comp
-L Connector:TestPoint TP4
-U 1 1 5DF14B53
-P 10250 4600
-F 0 "TP4" V 10250 4850 50  0000 C CNN
-F 1 "DBG_TXD" V 10250 5100 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10450 4600 50  0001 C CNN
-F 3 "~" H 10450 4600 50  0001 C CNN
-	1    10250 4600
-	0    1    1    0   
-$EndComp
+	10050 4600 10450 4600
 Wire Wire Line
-	10050 4700 10250 4700
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5DF1CF0D
-P 10250 4700
-F 0 "TP5" V 10250 4950 50  0000 C CNN
-F 1 "INT0" V 10250 5200 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10450 4700 50  0001 C CNN
-F 3 "~" H 10450 4700 50  0001 C CNN
-	1    10250 4700
-	0    1    1    0   
-$EndComp
+	10050 4700 10450 4700
 Wire Wire Line
-	10050 4800 10250 4800
-$Comp
-L Connector:TestPoint TP6
-U 1 1 5DF253F3
-P 10250 4800
-F 0 "TP6" V 10250 5050 50  0000 C CNN
-F 1 "INT1" V 10250 5300 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10450 4800 50  0001 C CNN
-F 3 "~" H 10450 4800 50  0001 C CNN
-	1    10250 4800
-	0    1    1    0   
-$EndComp
+	10050 4800 10450 4800
 Wire Wire Line
-	10050 4900 10250 4900
-$Comp
-L Connector:TestPoint TP7
-U 1 1 5DF2DAFE
-P 10250 4900
-F 0 "TP7" V 10250 5150 50  0000 C CNN
-F 1 "SIGCLK" V 10250 5400 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10450 4900 50  0001 C CNN
-F 3 "~" H 10450 4900 50  0001 C CNN
-	1    10250 4900
-	0    1    1    0   
-$EndComp
+	10050 4900 10450 4900
 Wire Wire Line
-	10050 5000 10250 5000
-$Comp
-L Connector:TestPoint TP8
-U 1 1 5DF363A1
-P 10250 5000
-F 0 "TP8" V 10250 5250 50  0000 C CNN
-F 1 "SIGOUT" V 10250 5500 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10450 5000 50  0001 C CNN
-F 3 "~" H 10450 5000 50  0001 C CNN
-	1    10250 5000
-	0    1    1    0   
-$EndComp
+	10050 5000 10450 5000
 Wire Wire Line
-	10050 5100 10250 5100
-$Comp
-L Connector:TestPoint TP9
-U 1 1 5DF3ED31
-P 10250 5100
-F 0 "TP9" V 10250 5350 50  0000 C CNN
-F 1 "SIGIN" V 10250 5600 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10450 5100 50  0001 C CNN
-F 3 "~" H 10450 5100 50  0001 C CNN
-	1    10250 5100
-	0    1    1    0   
-$EndComp
+	10050 5100 10450 5100
 Wire Wire Line
 	4900 5650 5100 5650
-$Comp
-L Connector:TestPoint TP10
-U 1 1 5DF480E2
-P 5100 5650
-F 0 "TP10" V 5100 5900 50  0000 C CNN
-F 1 "R13" V 5100 6150 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5300 5650 50  0001 C CNN
-F 3 "~" H 5300 5650 50  0001 C CNN
-	1    5100 5650
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4900 5750 5100 5750
-$Comp
-L Connector:TestPoint TP11
-U 1 1 5DF480E9
-P 5100 5750
-F 0 "TP11" V 5100 6000 50  0000 C CNN
-F 1 "G13" V 5100 6250 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5300 5750 50  0001 C CNN
-F 3 "~" H 5300 5750 50  0001 C CNN
-	1    5100 5750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4900 5850 5100 5850
-$Comp
-L Connector:TestPoint TP12
-U 1 1 5DF480F0
-P 5100 5850
-F 0 "TP12" V 5100 6100 50  0000 C CNN
-F 1 "B13" V 5100 6350 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5300 5850 50  0001 C CNN
-F 3 "~" H 5300 5850 50  0001 C CNN
-	1    5100 5850
-	0    1    1    0   
-$EndComp
 $Sheet
 S 6100 1950 550  400 
 U 5E27FE18
@@ -1331,6 +1200,46 @@ F 3 "" H 1100 1500 50  0001 C CNN
 	1    1100 1500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5DDA55B8
+P 5300 5750
+F 0 "J4" H 5218 5517 50  0000 C CNN
+F 1 "Conn_01x03" H 5218 5426 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 5300 5750 50  0001 C CNN
+F 3 "~" H 5300 5750 50  0001 C CNN
+	1    5300 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x09 J5
+U 1 1 5DDB2582
+P 10650 4700
+F 0 "J5" H 10730 4742 50  0000 L CNN
+F 1 "Conn_01x09" H 10730 4651 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Horizontal" H 10650 4700 50  0001 C CNN
+F 3 "~" H 10650 4700 50  0001 C CNN
+	1    10650 4700
+	1    0    0    -1  
+$EndComp
+Text Label 10100 4300 0    50   ~ 0
+AUX1
+Text Label 10100 4400 0    50   ~ 0
+AUX2
+Text Label 10100 4500 0    50   ~ 0
+DBG_RXD
+Text Label 10100 4600 0    50   ~ 0
+DBG_TXD
+Text Label 10100 4700 0    50   ~ 0
+INT0
+Text Label 10100 4800 0    50   ~ 0
+INT1
+Text Label 10100 4900 0    50   ~ 0
+SIGCLK
+Text Label 10100 5000 0    50   ~ 0
+SIGOUT
+Text Label 10100 5100 0    50   ~ 0
+SIGIN
 Wire Bus Line
 	7250 1050 7250 3450
 Wire Bus Line
