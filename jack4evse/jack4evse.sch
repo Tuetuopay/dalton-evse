@@ -143,47 +143,47 @@ Wire Wire Line
 Wire Wire Line
 	4600 4100 4950 4100
 Wire Wire Line
+	4950 4600 4450 4600
+Text Label 4450 4600 0    50   ~ 0
+R1
+Wire Wire Line
 	4950 4700 4450 4700
 Text Label 4450 4700 0    50   ~ 0
-R1
+G1
 Wire Wire Line
 	4950 4800 4450 4800
 Text Label 4450 4800 0    50   ~ 0
-G1
-Wire Wire Line
-	4950 4900 4450 4900
-Text Label 4450 4900 0    50   ~ 0
 B1
 Wire Wire Line
-	4600 4600 4950 4600
+	4600 4500 4950 4500
+Wire Wire Line
+	4950 5000 4450 5000
+Text Label 4450 5000 0    50   ~ 0
+R2
+Wire Wire Line
+	4950 5100 4450 5100
+Text Label 4450 5100 0    50   ~ 0
+G2
 Wire Wire Line
 	4950 5200 4450 5200
 Text Label 4450 5200 0    50   ~ 0
-R2
+B2
 Wire Wire Line
-	4950 5300 4450 5300
-Text Label 4450 5300 0    50   ~ 0
-G2
+	4600 4900 4950 4900
 Wire Wire Line
 	4950 5400 4450 5400
 Text Label 4450 5400 0    50   ~ 0
-B2
-Wire Wire Line
-	4600 5100 4950 5100
-Wire Wire Line
-	4950 5700 4450 5700
-Text Label 4450 5700 0    50   ~ 0
 R3
 Wire Wire Line
-	4950 5800 4450 5800
-Text Label 4450 5800 0    50   ~ 0
+	4950 5500 4450 5500
+Text Label 4450 5500 0    50   ~ 0
 G3
 Wire Wire Line
-	4950 5900 4450 5900
-Text Label 4450 5900 0    50   ~ 0
+	4950 5600 4450 5600
+Text Label 4450 5600 0    50   ~ 0
 B3
 Wire Wire Line
-	4600 5600 4950 5600
+	4600 5300 4950 5300
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J1
 U 1 1 5DCA944C
@@ -387,59 +387,6 @@ Input\n
 Text Notes 8550 3400 0    50   ~ 0
 Output\n
 $Comp
-L Connector_Generic:Conn_01x04 J2
-U 1 1 5DD0F963
-P 5150 4200
-F 0 "J2" H 5230 4192 50  0000 L CNN
-F 1 "Conn_01x04" H 5230 4101 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 5150 4200 50  0001 C CNN
-F 3 "~" H 5150 4200 50  0001 C CNN
-	1    5150 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J3
-U 1 1 5DD151CE
-P 5150 4700
-F 0 "J3" H 5230 4692 50  0000 L CNN
-F 1 "Conn_01x04" H 5230 4601 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 5150 4700 50  0001 C CNN
-F 3 "~" H 5150 4700 50  0001 C CNN
-	1    5150 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J5
-U 1 1 5DD17FE5
-P 5150 5200
-F 0 "J5" H 5230 5192 50  0000 L CNN
-F 1 "Conn_01x04" H 5230 5101 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 5150 5200 50  0001 C CNN
-F 3 "~" H 5150 5200 50  0001 C CNN
-	1    5150 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J6
-U 1 1 5DD1860C
-P 5150 5700
-F 0 "J6" H 5230 5692 50  0000 L CNN
-F 1 "Conn_01x04" H 5230 5601 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 5150 5700 50  0001 C CNN
-F 3 "~" H 5150 5700 50  0001 C CNN
-	1    5150 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4600 4100 4600 4600
-Connection ~ 4600 4100
-Wire Wire Line
-	4600 5100 4600 4600
-Connection ~ 4600 4600
-Wire Wire Line
-	4600 5100 4600 5600
-Connection ~ 4600 5100
-$Comp
 L power:+5V #PWR0101
 U 1 1 5DD2D382
 P 4050 2050
@@ -496,4 +443,24 @@ Wire Wire Line
 Connection ~ 6150 3000
 Wire Wire Line
 	6150 3000 7100 3000
+$Comp
+L Connector_Generic:Conn_01x16 J2
+U 1 1 5DD5AF38
+P 5150 4900
+F 0 "J2" H 5068 3875 50  0000 C CNN
+F 1 "Conn_01x16" H 5068 3966 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Horizontal" H 5150 4900 50  0001 C CNN
+F 3 "~" H 5150 4900 50  0001 C CNN
+	1    5150 4900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4600 4100 4600 4500
+Connection ~ 4600 4100
+Wire Wire Line
+	4600 4500 4600 4900
+Connection ~ 4600 4500
+Wire Wire Line
+	4600 4900 4600 5300
+Connection ~ 4600 4900
 $EndSCHEMATC
