@@ -666,84 +666,6 @@ Wire Wire Line
 	10050 5200 10900 5200
 Text Label 10900 5200 2    50   ~ 0
 ~RST
-Wire Wire Line
-	1100 3650 1500 3650
-Text Label 1500 3650 2    50   ~ 0
-SCK
-Wire Wire Line
-	1100 3850 1500 3850
-Text Label 1500 3850 2    50   ~ 0
-MOSI
-Wire Wire Line
-	1500 3750 1100 3750
-Text Label 1500 3750 2    50   ~ 0
-MISO
-Wire Wire Line
-	1100 4250 1500 4250
-Wire Wire Line
-	1100 4350 1500 4350
-Text Label 1500 4250 2    50   ~ 0
-IRQ
-Text Label 1500 4350 2    50   ~ 0
-~RSTO
-Wire Wire Line
-	1100 3950 1500 3950
-Text Label 1500 3950 2    50   ~ 0
-NFC_CS
-Wire Wire Line
-	1100 4450 1500 4450
-Text Label 1500 4450 2    50   ~ 0
-~RST
-Wire Wire Line
-	1100 4650 1500 4650
-Text Label 1500 4650 2    50   ~ 0
-TOUCH
-$Comp
-L power:+3V3 #PWR0121
-U 1 1 5DDA9C82
-P 1600 3550
-F 0 "#PWR0121" H 1600 3400 50  0001 C CNN
-F 1 "+3V3" H 1615 3723 50  0000 C CNN
-F 2 "" H 1600 3550 50  0001 C CNN
-F 3 "" H 1600 3550 50  0001 C CNN
-	1    1600 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0122
-U 1 1 5DDB0D60
-P 1800 3550
-F 0 "#PWR0122" H 1800 3400 50  0001 C CNN
-F 1 "+5V" H 1815 3723 50  0000 C CNN
-F 2 "" H 1800 3550 50  0001 C CNN
-F 3 "" H 1800 3550 50  0001 C CNN
-	1    1800 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0123
-U 1 1 5DDB21AA
-P 1600 4950
-F 0 "#PWR0123" H 1600 4700 50  0001 C CNN
-F 1 "GND" H 1605 4777 50  0000 C CNN
-F 2 "" H 1600 4950 50  0001 C CNN
-F 3 "" H 1600 4950 50  0001 C CNN
-	1    1600 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 4150 1600 4150
-Wire Wire Line
-	1100 4850 1600 4850
-Connection ~ 1600 4850
-Wire Wire Line
-	1600 4850 1600 4950
-Wire Wire Line
-	1100 4050 1600 4050
-Wire Wire Line
-	1600 4050 1600 3550
-Wire Wire Line
-	1100 4750 1800 4750
 $Comp
 L Connector_Generic:Conn_01x16 J1
 U 1 1 5DDFB97E
@@ -1308,27 +1230,139 @@ Wire Wire Line
 	4200 3950 4200 4000
 Wire Wire Line
 	4200 4200 4200 4400
-$Comp
-L Connector_Generic:Conn_01x13 J2
-U 1 1 5DFE7B6A
-P 900 4250
-F 0 "J2" H 818 5067 50  0000 C CNN
-F 1 "Conn_01x13" H 818 4976 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Horizontal" H 900 4250 50  0001 C CNN
-F 3 "~" H 900 4250 50  0001 C CNN
-	1    900  4250
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 4150 1600 4850
-Wire Wire Line
-	1800 3550 1800 4750
-Wire Wire Line
-	1100 4550 1500 4550
-Text Label 1500 4550 2    50   ~ 0
-DRV_CS
 Text Label 4500 3950 0    50   ~ 0
 DRV_SCK
+Text Label 2100 2800 2    50   ~ 0
+SCK
+Text Label 2100 3200 2    50   ~ 0
+MOSI
+Text Label 2100 3000 2    50   ~ 0
+MISO
+Text Label 2100 3400 2    50   ~ 0
+NFC_CS
+Text Label 2100 3500 2    50   ~ 0
+DRV_CS
+$Comp
+L power:GND #PWR013
+U 1 1 5E0E57F4
+P 1750 4600
+F 0 "#PWR013" H 1750 4350 50  0001 C CNN
+F 1 "GND" H 1755 4427 50  0000 C CNN
+F 2 "" H 1750 4600 50  0001 C CNN
+F 3 "" H 1750 4600 50  0001 C CNN
+	1    1750 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2900 1750 3100
+Connection ~ 1750 3100
+Wire Wire Line
+	1750 3100 1750 3300
+Connection ~ 1750 3300
+Wire Wire Line
+	1750 3300 1750 4600
+NoConn ~ 850  2800
+NoConn ~ 850  2900
+NoConn ~ 850  3400
+NoConn ~ 850  3500
+Wire Wire Line
+	1650 3900 2050 3900
+Wire Wire Line
+	1650 3700 2050 3700
+Text Label 2050 3900 2    50   ~ 0
+IRQ
+Text Label 2050 3700 2    50   ~ 0
+~RSTO
+Wire Wire Line
+	1650 3800 2050 3800
+Text Label 2050 3800 2    50   ~ 0
+~RST
+Wire Wire Line
+	1650 4000 2050 4000
+Text Label 2050 4000 2    50   ~ 0
+TOUCH
+$Comp
+L power:+3V3 #PWR014
+U 1 1 5E19EC10
+P 2150 2750
+F 0 "#PWR014" H 2150 2600 50  0001 C CNN
+F 1 "+3V3" H 2165 2923 50  0000 C CNN
+F 2 "" H 2150 2750 50  0001 C CNN
+F 3 "" H 2150 2750 50  0001 C CNN
+	1    2150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR015
+U 1 1 5E19EC16
+P 2350 2750
+F 0 "#PWR015" H 2350 2600 50  0001 C CNN
+F 1 "+5V" H 2365 2923 50  0000 C CNN
+F 2 "" H 2350 2750 50  0001 C CNN
+F 3 "" H 2350 2750 50  0001 C CNN
+	1    2350 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 4100 2150 4100
+Wire Wire Line
+	2150 4100 2150 2750
+Wire Wire Line
+	1650 4200 2150 4200
+Wire Wire Line
+	2150 4200 2150 4100
+Connection ~ 2150 4100
+Wire Wire Line
+	1650 4300 2350 4300
+Wire Wire Line
+	2350 4300 2350 2750
+Wire Wire Line
+	1650 4400 2350 4400
+Wire Wire Line
+	2350 4400 2350 4300
+Connection ~ 2350 4300
+NoConn ~ 850  3700
+NoConn ~ 850  3800
+NoConn ~ 850  4300
+NoConn ~ 850  4400
+$Comp
+L power:GND #PWR012
+U 1 1 5E293AEA
+P 1250 4600
+F 0 "#PWR012" H 1250 4350 50  0001 C CNN
+F 1 "GND" H 1255 4427 50  0000 C CNN
+F 2 "" H 1250 4600 50  0001 C CNN
+F 3 "" H 1250 4600 50  0001 C CNN
+	1    1250 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ma4evse:CONNFLY_Elec_DS1129-04-S8B0P-X J2
+U 1 1 5E2BD21A
+P 1250 3600
+F 0 "J2" H 1250 4667 50  0000 C CNN
+F 1 "CONNFLY_Elec_DS1129-04-S8B0P-X" H 1250 4576 50  0000 C CNN
+F 2 "ma4evse:CONNFLY_Elec_DS1129-04-S8B0P-X" V 2450 3750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811141116_CONNFLY-Elec-DS1129-04-S8B0P-X_C86581.pdf" V 1250 4025 50  0001 C CNN
+	1    1250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2800 2100 2800
+Wire Wire Line
+	1650 3200 2100 3200
+Wire Wire Line
+	1650 3000 2100 3000
+Wire Wire Line
+	1650 3400 2100 3400
+Wire Wire Line
+	1650 3500 2100 3500
+Wire Wire Line
+	1650 2900 1750 2900
+Wire Wire Line
+	1650 3100 1750 3100
+Wire Wire Line
+	1650 3300 1750 3300
 Wire Bus Line
 	8250 1050 8250 3450
 Wire Bus Line
