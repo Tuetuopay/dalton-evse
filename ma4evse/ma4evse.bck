@@ -1,3 +1,72 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 2_8P8C_LED_Shielded
+D Dual RJ connector, 8P8C (8 positions 8 connected), four LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F ~
+$ENDCMP
+#
+$CMP 8P8C_LED_Shielded
+D RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F ~
+$ENDCMP
+#
+$CMP AO3402
+D 30V N-Channel MOSFET
+K transistor NMOS N-MOS N-MOSFET
+F http://www.aosmd.com/pdfs/datasheet/AO3402.pdf
+$ENDCMP
+#
+$CMP Amphenol_RJHSE538X
+D RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F https://signin.amphenolcanada.com/ProductSearch/drawings/AC/RJHSE538X.pdf
+$ENDCMP
+#
+$CMP Amphenol_RJHSE538X_copy
+D RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F https://signin.amphenolcanada.com/ProductSearch/drawings/AC/RJHSE538X.pdf
+$ENDCMP
+#
+$CMP Boom_Precision_RJ45-B-1x1
+D RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F https://datasheet.lcsc.com/szlcsc/1811141116_Boom-Precision-Elec-RJ45-B-1-1_C138392.pdf
+$ENDCMP
+#
+$CMP Boom_Precision_RJ45-B-1x1_copy
+D RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F https://datasheet.lcsc.com/szlcsc/1811141116_Boom-Precision-Elec-RJ45-B-1-1_C138392.pdf
+$ENDCMP
+#
+$CMP CH340C
+D USB to serial
+K UART
+F https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF
+$ENDCMP
+#
+$CMP CONNFLY_Elec_DS1129-04-S8B0P-X
+D Dual RJ connector, 8P8C (8 positions 8 connected), four LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F https://datasheet.lcsc.com/szlcsc/1811141116_CONNFLY-Elec-DS1129-04-S8B0P-X_C86581.pdf
+$ENDCMP
+#
+$CMP FiPy
+D PyCom Wifi, BLE, LoRA, SigFox devkit
+F https://docs.pycom.io/gitbook/assets/specsheets/Pycom_002_Specsheets_FiPy_v2.pdf
+$ENDCMP
+#
+$CMP NFCv4
+F http://www.elechouse.com/elechouse/images/product/PN532_module_V3/PN532_%20Manual_V3.pdf
+$ENDCMP
+#
+$CMP RJ45_LED_Shielded
+D RJ connector, 8P8C (8 positions 8 connected), two LEDs, Shielded
+K 8P8C RJ female connector led
+F ~
+$ENDCMP
+#
 #End Doc Library

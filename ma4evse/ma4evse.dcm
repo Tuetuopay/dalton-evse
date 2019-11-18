@@ -1,15 +1,63 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 2_8P8C_LED_Shielded
+D Dual RJ connector, 8P8C (8 positions 8 connected), four LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F ~
+$ENDCMP
+#
+$CMP 8P8C_LED_Shielded
+D RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F ~
+$ENDCMP
+#
 $CMP AO3402
 D 30V N-Channel MOSFET
 K transistor NMOS N-MOS N-MOSFET
 F http://www.aosmd.com/pdfs/datasheet/AO3402.pdf
 $ENDCMP
 #
+$CMP Amphenol_RJHSE-538X-02
+D Dual RJ connector, 8P8C (8 positions 8 connected), four LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/rjhsex38x02.pdf
+$ENDCMP
+#
+$CMP Amphenol_RJHSE538X
+D RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F https://signin.amphenolcanada.com/ProductSearch/drawings/AC/RJHSE538X.pdf
+$ENDCMP
+#
+$CMP Amphenol_RJHSE538X_copy
+D RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F https://signin.amphenolcanada.com/ProductSearch/drawings/AC/RJHSE538X.pdf
+$ENDCMP
+#
+$CMP Boom_Precision_RJ45-B-1x1
+D RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F https://datasheet.lcsc.com/szlcsc/1811141116_Boom-Precision-Elec-RJ45-B-1-1_C138392.pdf
+$ENDCMP
+#
+$CMP Boom_Precision_RJ45-B-1x1_copy
+D RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F https://datasheet.lcsc.com/szlcsc/1811141116_Boom-Precision-Elec-RJ45-B-1-1_C138392.pdf
+$ENDCMP
+#
 $CMP CH340C
 D USB to serial
 K UART
 F https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF
+$ENDCMP
+#
+$CMP CONNFLY_Elec_DS1129-04-S8B0P-X
+D Dual RJ connector, 8P8C (8 positions 8 connected), four LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F https://datasheet.lcsc.com/szlcsc/1811141116_CONNFLY-Elec-DS1129-04-S8B0P-X_C86581.pdf
 $ENDCMP
 #
 $CMP FiPy
