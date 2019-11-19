@@ -69,4 +69,8 @@ $CMP NFCv4
 F http://www.elechouse.com/elechouse/images/product/PN532_module_V3/PN532_%20Manual_V3.pdf
 $ENDCMP
 #
+$CMP RCMB121
+F http://www.promac.com.pl/wp-content/uploads/2016/10/RCMB121_D00267_D_XXEN.pdf
+$ENDCMP
+#
 #End Doc Library
