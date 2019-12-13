@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 5 6
 Title "Joe 4 EVSE"
 Date "2019-12-10"
 Rev "v1.0"
@@ -13,21 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Relay:G5LE-1 K?
-U 1 1 5E2A2034
-P 5900 3400
-AR Path="/5E2A2034" Ref="K?"  Part="1" 
-AR Path="/5E295EB5/5E2A2034" Ref="K10"  Part="1" 
-AR Path="/5E2A129E/5E2A2034" Ref="K2"  Part="1" 
-AR Path="/5E2A9DD8/5E2A2034" Ref="K18"  Part="1" 
-F 0 "K18" H 6330 3446 50  0000 L CNN
-F 1 "G5LE-1" H 6330 3355 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 6350 3350 50  0001 L CNN
-F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 5900 3000 50  0001 C CNN
-	1    5900 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6100 3700 6100 3800
 Wire Wire Line
@@ -47,26 +32,9 @@ Wire Wire Line
 Wire Wire Line
 	6000 3100 6000 2900
 Wire Wire Line
-	6000 2900 6800 2900
-Wire Wire Line
 	6800 2900 6800 3200
 Wire Wire Line
 	6800 3200 6900 3200
-$Comp
-L Device:D_Schottky D?
-U 1 1 5E2AAE14
-P 5400 3400
-AR Path="/5E2AAE14" Ref="D?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE14" Ref="D20"  Part="1" 
-AR Path="/5E2A129E/5E2AAE14" Ref="D12"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE14" Ref="D28"  Part="1" 
-F 0 "D28" V 5354 3322 50  0000 R CNN
-F 1 "D_Schottky" V 5445 3322 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5400 3400 50  0001 C CNN
-F 3 "~" H 5400 3400 50  0001 C CNN
-	1    5400 3400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5400 3250 5400 3000
 Wire Wire Line
@@ -79,89 +47,14 @@ Wire Wire Line
 	5400 3800 5700 3800
 Wire Wire Line
 	5700 3800 5700 3700
-$Comp
-L power:+5V #PWR?
-U 1 1 5E2AAE25
-P 5700 2900
-AR Path="/5E2AAE25" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE25" Ref="#PWR054"  Part="1" 
-AR Path="/5E2A129E/5E2AAE25" Ref="#PWR030"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE25" Ref="#PWR078"  Part="1" 
-F 0 "#PWR078" H 5700 2750 50  0001 C CNN
-F 1 "+5V" H 5715 3073 50  0000 C CNN
-F 2 "" H 5700 2900 50  0001 C CNN
-F 3 "" H 5700 2900 50  0001 C CNN
-	1    5700 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5700 2900 5700 3000
 Connection ~ 5700 3000
-$Comp
-L ma4evse:AO3402 Q?
-U 1 1 5E2AAE16
-P 5600 4100
-AR Path="/5E2AAE16" Ref="Q?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE16" Ref="Q14"  Part="1" 
-AR Path="/5E2A129E/5E2AAE16" Ref="Q6"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE16" Ref="Q22"  Part="1" 
-F 0 "Q22" H 5806 4146 50  0000 L CNN
-F 1 "AO3402" H 5806 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 4200 50  0001 C CNN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3402.pdf" H 5600 4100 50  0001 C CNN
-	1    5600 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2AAE17
-P 5700 4500
-AR Path="/5E2AAE17" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE17" Ref="#PWR068"  Part="1" 
-AR Path="/5E2A129E/5E2AAE17" Ref="#PWR044"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE17" Ref="#PWR092"  Part="1" 
-F 0 "#PWR092" H 5700 4250 50  0001 C CNN
-F 1 "GND" H 5705 4327 50  0000 C CNN
-F 2 "" H 5700 4500 50  0001 C CNN
-F 3 "" H 5700 4500 50  0001 C CNN
-	1    5700 4500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5700 4500 5700 4300
 Wire Wire Line
 	5700 3900 5700 3800
 Connection ~ 5700 3800
-$Comp
-L Device:R_Small R?
-U 1 1 5E2AAE18
-P 5300 4300
-AR Path="/5E2AAE18" Ref="R?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE18" Ref="R20"  Part="1" 
-AR Path="/5E2A129E/5E2AAE18" Ref="R12"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE18" Ref="R28"  Part="1" 
-F 0 "R28" H 5241 4254 50  0000 R CNN
-F 1 "10k" H 5241 4345 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 4300 50  0001 C CNN
-F 3 "~" H 5300 4300 50  0001 C CNN
-	1    5300 4300
-	1    0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2AAE19
-P 5300 4500
-AR Path="/5E2AAE19" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE19" Ref="#PWR060"  Part="1" 
-AR Path="/5E2A129E/5E2AAE19" Ref="#PWR036"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE19" Ref="#PWR084"  Part="1" 
-F 0 "#PWR084" H 5300 4250 50  0001 C CNN
-F 1 "GND" H 5305 4327 50  0000 C CNN
-F 2 "" H 5300 4500 50  0001 C CNN
-F 3 "" H 5300 4500 50  0001 C CNN
-	1    5300 4500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5300 4500 5300 4400
 Wire Wire Line
@@ -170,1181 +63,48 @@ Wire Wire Line
 	5300 4100 5400 4100
 Wire Wire Line
 	5300 4100 4550 4100
+Connection ~ 5300 4100
 Text Label 4550 4100 0    50   ~ 0
 CTRL
-Connection ~ 5300 4100
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5E29CE3F
-P 7100 3300
-AR Path="/5E29CE3F" Ref="J?"  Part="1" 
-AR Path="/5E295EB5/5E29CE3F" Ref="J17"  Part="1" 
-AR Path="/5E2A129E/5E29CE3F" Ref="J9"  Part="1" 
-AR Path="/5E2A9DD8/5E29CE3F" Ref="J25"  Part="1" 
-F 0 "J25" H 7018 2975 50  0000 C CNN
-F 1 "Conn_01x03" H 7018 3066 50  0000 C CNN
-F 2 "" H 7100 3300 50  0001 C CNN
-F 3 "~" H 7100 3300 50  0001 C CNN
-	1    7100 3300
-	1    0    0    1   
-$EndComp
-Text HLabel 4550 4100 0    50   Input ~ 0
-CTRL
-$Comp
-L Relay:G5LE-1 K?
-U 1 1 5E2AAE1B
-P 5900 3400
-AR Path="/5E2AAE1B" Ref="K?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE1B" Ref="K15"  Part="1" 
-AR Path="/5E2A129E/5E2AAE1B" Ref="K7"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE1B" Ref="K23"  Part="1" 
-F 0 "K23" H 6330 3446 50  0000 L CNN
-F 1 "G5LE-1" H 6330 3355 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 6350 3350 50  0001 L CNN
-F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 5900 3000 50  0001 C CNN
-	1    5900 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 3700 6100 3800
-Wire Wire Line
-	6100 3800 6800 3800
-Wire Wire Line
-	6800 3800 6800 3400
-Wire Wire Line
-	6800 3400 6900 3400
-Wire Wire Line
-	6200 3100 6200 3000
-Wire Wire Line
-	6200 3000 6700 3000
-Wire Wire Line
-	6700 3000 6700 3300
-Wire Wire Line
-	6700 3300 6900 3300
-Wire Wire Line
-	6000 3100 6000 2900
-Wire Wire Line
-	6000 2900 6800 2900
-Wire Wire Line
-	6800 2900 6800 3200
-Wire Wire Line
-	6800 3200 6900 3200
-$Comp
-L Device:D_Schottky D?
-U 1 1 5E29CE09
-P 5400 3400
-AR Path="/5E29CE09" Ref="D?"  Part="1" 
-AR Path="/5E295EB5/5E29CE09" Ref="D15"  Part="1" 
-AR Path="/5E2A129E/5E29CE09" Ref="D5"  Part="1" 
-AR Path="/5E2A9DD8/5E29CE09" Ref="D23"  Part="1" 
-F 0 "D23" V 5354 3322 50  0000 R CNN
-F 1 "D_Schottky" V 5445 3322 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5400 3400 50  0001 C CNN
-F 3 "~" H 5400 3400 50  0001 C CNN
-	1    5400 3400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 3250 5400 3000
-Wire Wire Line
-	5400 3000 5700 3000
-Wire Wire Line
-	5700 3000 5700 3100
-Wire Wire Line
-	5400 3550 5400 3800
-Wire Wire Line
-	5400 3800 5700 3800
-Wire Wire Line
-	5700 3800 5700 3700
-$Comp
-L power:+5V #PWR?
-U 1 1 5E29CE15
-P 5700 2900
-AR Path="/5E29CE15" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E29CE15" Ref="#PWR047"  Part="1" 
-AR Path="/5E2A129E/5E29CE15" Ref="#PWR023"  Part="1" 
-AR Path="/5E2A9DD8/5E29CE15" Ref="#PWR071"  Part="1" 
-F 0 "#PWR071" H 5700 2750 50  0001 C CNN
-F 1 "+5V" H 5715 3073 50  0000 C CNN
-F 2 "" H 5700 2900 50  0001 C CNN
-F 3 "" H 5700 2900 50  0001 C CNN
-	1    5700 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 2900 5700 3000
-Connection ~ 5700 3000
-$Comp
-L ma4evse:AO3402 Q?
-U 1 1 5E29CE1D
-P 5600 4100
-AR Path="/5E29CE1D" Ref="Q?"  Part="1" 
-AR Path="/5E295EB5/5E29CE1D" Ref="Q9"  Part="1" 
-AR Path="/5E2A129E/5E29CE1D" Ref="Q1"  Part="1" 
-AR Path="/5E2A9DD8/5E29CE1D" Ref="Q17"  Part="1" 
-F 0 "Q17" H 5806 4146 50  0000 L CNN
-F 1 "AO3402" H 5806 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 4200 50  0001 C CNN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3402.pdf" H 5600 4100 50  0001 C CNN
-	1    5600 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E29CE23
-P 5700 4500
-AR Path="/5E29CE23" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E29CE23" Ref="#PWR063"  Part="1" 
-AR Path="/5E2A129E/5E29CE23" Ref="#PWR039"  Part="1" 
-AR Path="/5E2A9DD8/5E29CE23" Ref="#PWR087"  Part="1" 
-F 0 "#PWR087" H 5700 4250 50  0001 C CNN
-F 1 "GND" H 5705 4327 50  0000 C CNN
-F 2 "" H 5700 4500 50  0001 C CNN
-F 3 "" H 5700 4500 50  0001 C CNN
-	1    5700 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 4500 5700 4300
-Wire Wire Line
-	5700 3900 5700 3800
-Connection ~ 5700 3800
-$Comp
-L Device:R_Small R?
-U 1 1 5E29CE2C
-P 5300 4300
-AR Path="/5E29CE2C" Ref="R?"  Part="1" 
-AR Path="/5E295EB5/5E29CE2C" Ref="R15"  Part="1" 
-AR Path="/5E2A129E/5E29CE2C" Ref="R5"  Part="1" 
-AR Path="/5E2A9DD8/5E29CE2C" Ref="R23"  Part="1" 
-F 0 "R23" H 5241 4254 50  0000 R CNN
-F 1 "10k" H 5241 4345 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 4300 50  0001 C CNN
-F 3 "~" H 5300 4300 50  0001 C CNN
-	1    5300 4300
-	1    0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E29CE32
-P 5300 4500
-AR Path="/5E29CE32" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E29CE32" Ref="#PWR055"  Part="1" 
-AR Path="/5E2A129E/5E29CE32" Ref="#PWR031"  Part="1" 
-AR Path="/5E2A9DD8/5E29CE32" Ref="#PWR079"  Part="1" 
-F 0 "#PWR079" H 5300 4250 50  0001 C CNN
-F 1 "GND" H 5305 4327 50  0000 C CNN
-F 2 "" H 5300 4500 50  0001 C CNN
-F 3 "" H 5300 4500 50  0001 C CNN
-	1    5300 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 4500 5300 4400
-Wire Wire Line
-	5300 4200 5300 4100
-Wire Wire Line
-	5300 4100 5400 4100
-Wire Wire Line
-	5300 4100 4550 4100
-Text Label 4550 4100 0    50   ~ 0
-CTRL
-Connection ~ 5300 4100
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5E2A2606
-P 7100 3300
-AR Path="/5E2A2606" Ref="J?"  Part="1" 
-AR Path="/5E295EB5/5E2A2606" Ref="J20"  Part="1" 
-AR Path="/5E2A129E/5E2A2606" Ref="J12"  Part="1" 
-AR Path="/5E2A9DD8/5E2A2606" Ref="J28"  Part="1" 
-F 0 "J28" H 7018 2975 50  0000 C CNN
-F 1 "Conn_01x03" H 7018 3066 50  0000 C CNN
-F 2 "" H 7100 3300 50  0001 C CNN
-F 3 "~" H 7100 3300 50  0001 C CNN
-	1    7100 3300
-	1    0    0    1   
-$EndComp
-Text HLabel 4550 4100 0    50   Input ~ 0
-CTRL
-$Comp
-L Relay:G5LE-1 K?
-U 1 1 5E2A25FF
-P 5900 3400
-AR Path="/5E2A25FF" Ref="K?"  Part="1" 
-AR Path="/5E295EB5/5E2A25FF" Ref="K12"  Part="1" 
-AR Path="/5E2A129E/5E2A25FF" Ref="K4"  Part="1" 
-AR Path="/5E2A9DD8/5E2A25FF" Ref="K20"  Part="1" 
-F 0 "K20" H 6330 3446 50  0000 L CNN
-F 1 "G5LE-1" H 6330 3355 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 6350 3350 50  0001 L CNN
-F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 5900 3000 50  0001 C CNN
-	1    5900 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 3700 6100 3800
-Wire Wire Line
-	6100 3800 6800 3800
-Wire Wire Line
-	6800 3800 6800 3400
-Wire Wire Line
-	6800 3400 6900 3400
-Wire Wire Line
-	6200 3100 6200 3000
-Wire Wire Line
-	6200 3000 6700 3000
-Wire Wire Line
-	6700 3000 6700 3300
-Wire Wire Line
-	6700 3300 6900 3300
-Wire Wire Line
-	6000 3100 6000 2900
-Wire Wire Line
-	6000 2900 6800 2900
-Wire Wire Line
-	6800 2900 6800 3200
-Wire Wire Line
-	6800 3200 6900 3200
-$Comp
-L Device:D_Schottky D?
-U 1 1 5E2A2600
-P 5400 3400
-AR Path="/5E2A2600" Ref="D?"  Part="1" 
-AR Path="/5E295EB5/5E2A2600" Ref="D18"  Part="1" 
-AR Path="/5E2A129E/5E2A2600" Ref="D10"  Part="1" 
-AR Path="/5E2A9DD8/5E2A2600" Ref="D26"  Part="1" 
-F 0 "D26" V 5354 3322 50  0000 R CNN
-F 1 "D_Schottky" V 5445 3322 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5400 3400 50  0001 C CNN
-F 3 "~" H 5400 3400 50  0001 C CNN
-	1    5400 3400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 3250 5400 3000
-Wire Wire Line
-	5400 3000 5700 3000
-Wire Wire Line
-	5700 3000 5700 3100
-Wire Wire Line
-	5400 3550 5400 3800
-Wire Wire Line
-	5400 3800 5700 3800
-Wire Wire Line
-	5700 3800 5700 3700
-$Comp
-L power:+5V #PWR?
-U 1 1 5E2A2036
-P 5700 2900
-AR Path="/5E2A2036" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2A2036" Ref="#PWR048"  Part="1" 
-AR Path="/5E2A129E/5E2A2036" Ref="#PWR024"  Part="1" 
-AR Path="/5E2A9DD8/5E2A2036" Ref="#PWR072"  Part="1" 
-F 0 "#PWR072" H 5700 2750 50  0001 C CNN
-F 1 "+5V" H 5715 3073 50  0000 C CNN
-F 2 "" H 5700 2900 50  0001 C CNN
-F 3 "" H 5700 2900 50  0001 C CNN
-	1    5700 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 2900 5700 3000
-Connection ~ 5700 3000
-$Comp
-L ma4evse:AO3402 Q?
-U 1 1 5E2A2602
-P 5600 4100
-AR Path="/5E2A2602" Ref="Q?"  Part="1" 
-AR Path="/5E295EB5/5E2A2602" Ref="Q12"  Part="1" 
-AR Path="/5E2A129E/5E2A2602" Ref="Q4"  Part="1" 
-AR Path="/5E2A9DD8/5E2A2602" Ref="Q20"  Part="1" 
-F 0 "Q20" H 5806 4146 50  0000 L CNN
-F 1 "AO3402" H 5806 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 4200 50  0001 C CNN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3402.pdf" H 5600 4100 50  0001 C CNN
-	1    5600 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2A2603
-P 5700 4500
-AR Path="/5E2A2603" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2A2603" Ref="#PWR066"  Part="1" 
-AR Path="/5E2A129E/5E2A2603" Ref="#PWR042"  Part="1" 
-AR Path="/5E2A9DD8/5E2A2603" Ref="#PWR090"  Part="1" 
-F 0 "#PWR090" H 5700 4250 50  0001 C CNN
-F 1 "GND" H 5705 4327 50  0000 C CNN
-F 2 "" H 5700 4500 50  0001 C CNN
-F 3 "" H 5700 4500 50  0001 C CNN
-	1    5700 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 4500 5700 4300
-Wire Wire Line
-	5700 3900 5700 3800
-Connection ~ 5700 3800
-$Comp
-L Device:R_Small R?
-U 1 1 5E2A2604
-P 5300 4300
-AR Path="/5E2A2604" Ref="R?"  Part="1" 
-AR Path="/5E295EB5/5E2A2604" Ref="R18"  Part="1" 
-AR Path="/5E2A129E/5E2A2604" Ref="R8"  Part="1" 
-AR Path="/5E2A9DD8/5E2A2604" Ref="R26"  Part="1" 
-F 0 "R26" H 5241 4254 50  0000 R CNN
-F 1 "10k" H 5241 4345 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 4300 50  0001 C CNN
-F 3 "~" H 5300 4300 50  0001 C CNN
-	1    5300 4300
-	1    0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2AAE29
-P 5300 4500
-AR Path="/5E2AAE29" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE29" Ref="#PWR062"  Part="1" 
-AR Path="/5E2A129E/5E2AAE29" Ref="#PWR038"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE29" Ref="#PWR086"  Part="1" 
-F 0 "#PWR086" H 5300 4250 50  0001 C CNN
-F 1 "GND" H 5305 4327 50  0000 C CNN
-F 2 "" H 5300 4500 50  0001 C CNN
-F 3 "" H 5300 4500 50  0001 C CNN
-	1    5300 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 4500 5300 4400
-Wire Wire Line
-	5300 4200 5300 4100
-Wire Wire Line
-	5300 4100 5400 4100
-Wire Wire Line
-	5300 4100 4550 4100
-Text Label 4550 4100 0    50   ~ 0
-CTRL
-Connection ~ 5300 4100
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5E2AAE22
-P 7100 3300
-AR Path="/5E2AAE22" Ref="J?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE22" Ref="J23"  Part="1" 
-AR Path="/5E2A129E/5E2AAE22" Ref="J15"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE22" Ref="J31"  Part="1" 
-F 0 "J31" H 7018 2975 50  0000 C CNN
-F 1 "Conn_01x03" H 7018 3066 50  0000 C CNN
-F 2 "" H 7100 3300 50  0001 C CNN
-F 3 "~" H 7100 3300 50  0001 C CNN
-	1    7100 3300
-	1    0    0    1   
-$EndComp
-Text HLabel 4550 4100 0    50   Input ~ 0
-CTRL
-$Comp
-L Relay:G5LE-1 K?
-U 1 1 5E29CDF7
-P 5900 3400
-AR Path="/5E29CDF7" Ref="K?"  Part="1" 
-AR Path="/5E295EB5/5E29CDF7" Ref="K9"  Part="1" 
-AR Path="/5E2A129E/5E29CDF7" Ref="K1"  Part="1" 
-AR Path="/5E2A9DD8/5E29CDF7" Ref="K17"  Part="1" 
-F 0 "K17" H 6330 3446 50  0000 L CNN
-F 1 "G5LE-1" H 6330 3355 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 6350 3350 50  0001 L CNN
-F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 5900 3000 50  0001 C CNN
-	1    5900 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 3700 6100 3800
-Wire Wire Line
-	6100 3800 6800 3800
-Wire Wire Line
-	6800 3800 6800 3400
-Wire Wire Line
-	6800 3400 6900 3400
-Wire Wire Line
-	6200 3100 6200 3000
-Wire Wire Line
-	6200 3000 6700 3000
-Wire Wire Line
-	6700 3000 6700 3300
-Wire Wire Line
-	6700 3300 6900 3300
-Wire Wire Line
-	6000 3100 6000 2900
-Wire Wire Line
-	6000 2900 6800 2900
-Wire Wire Line
-	6800 2900 6800 3200
-Wire Wire Line
-	6800 3200 6900 3200
-$Comp
-L Device:D_Schottky D?
-U 1 1 5E2A25F8
-P 5400 3400
-AR Path="/5E2A25F8" Ref="D?"  Part="1" 
-AR Path="/5E295EB5/5E2A25F8" Ref="D17"  Part="1" 
-AR Path="/5E2A129E/5E2A25F8" Ref="D9"  Part="1" 
-AR Path="/5E2A9DD8/5E2A25F8" Ref="D25"  Part="1" 
-F 0 "D25" V 5354 3322 50  0000 R CNN
-F 1 "D_Schottky" V 5445 3322 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5400 3400 50  0001 C CNN
-F 3 "~" H 5400 3400 50  0001 C CNN
-	1    5400 3400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 3250 5400 3000
-Wire Wire Line
-	5400 3000 5700 3000
-Wire Wire Line
-	5700 3000 5700 3100
-Wire Wire Line
-	5400 3550 5400 3800
-Wire Wire Line
-	5400 3800 5700 3800
-Wire Wire Line
-	5700 3800 5700 3700
-$Comp
-L power:+5V #PWR?
-U 1 1 5E2AAE1D
-P 5700 2900
-AR Path="/5E2AAE1D" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE1D" Ref="#PWR053"  Part="1" 
-AR Path="/5E2A129E/5E2AAE1D" Ref="#PWR029"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE1D" Ref="#PWR077"  Part="1" 
-F 0 "#PWR077" H 5700 2750 50  0001 C CNN
-F 1 "+5V" H 5715 3073 50  0000 C CNN
-F 2 "" H 5700 2900 50  0001 C CNN
-F 3 "" H 5700 2900 50  0001 C CNN
-	1    5700 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 2900 5700 3000
-Connection ~ 5700 3000
-$Comp
-L ma4evse:AO3402 Q?
-U 1 1 5E2A25FA
-P 5600 4100
-AR Path="/5E2A25FA" Ref="Q?"  Part="1" 
-AR Path="/5E295EB5/5E2A25FA" Ref="Q11"  Part="1" 
-AR Path="/5E2A129E/5E2A25FA" Ref="Q3"  Part="1" 
-AR Path="/5E2A9DD8/5E2A25FA" Ref="Q19"  Part="1" 
-F 0 "Q19" H 5806 4146 50  0000 L CNN
-F 1 "AO3402" H 5806 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 4200 50  0001 C CNN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3402.pdf" H 5600 4100 50  0001 C CNN
-	1    5600 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2A25FB
-P 5700 4500
-AR Path="/5E2A25FB" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2A25FB" Ref="#PWR065"  Part="1" 
-AR Path="/5E2A129E/5E2A25FB" Ref="#PWR041"  Part="1" 
-AR Path="/5E2A9DD8/5E2A25FB" Ref="#PWR089"  Part="1" 
-F 0 "#PWR089" H 5700 4250 50  0001 C CNN
-F 1 "GND" H 5705 4327 50  0000 C CNN
-F 2 "" H 5700 4500 50  0001 C CNN
-F 3 "" H 5700 4500 50  0001 C CNN
-	1    5700 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 4500 5700 4300
-Wire Wire Line
-	5700 3900 5700 3800
-Connection ~ 5700 3800
-$Comp
-L Device:R_Small R?
-U 1 1 5E2A25FC
-P 5300 4300
-AR Path="/5E2A25FC" Ref="R?"  Part="1" 
-AR Path="/5E295EB5/5E2A25FC" Ref="R17"  Part="1" 
-AR Path="/5E2A129E/5E2A25FC" Ref="R7"  Part="1" 
-AR Path="/5E2A9DD8/5E2A25FC" Ref="R25"  Part="1" 
-F 0 "R25" H 5241 4254 50  0000 R CNN
-F 1 "10k" H 5241 4345 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 4300 50  0001 C CNN
-F 3 "~" H 5300 4300 50  0001 C CNN
-	1    5300 4300
-	1    0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2A25FD
-P 5300 4500
-AR Path="/5E2A25FD" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2A25FD" Ref="#PWR057"  Part="1" 
-AR Path="/5E2A129E/5E2A25FD" Ref="#PWR033"  Part="1" 
-AR Path="/5E2A9DD8/5E2A25FD" Ref="#PWR081"  Part="1" 
-F 0 "#PWR081" H 5300 4250 50  0001 C CNN
-F 1 "GND" H 5305 4327 50  0000 C CNN
-F 2 "" H 5300 4500 50  0001 C CNN
-F 3 "" H 5300 4500 50  0001 C CNN
-	1    5300 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 4500 5300 4400
-Wire Wire Line
-	5300 4200 5300 4100
-Wire Wire Line
-	5300 4100 5400 4100
-Wire Wire Line
-	5300 4100 4550 4100
-Text Label 4550 4100 0    50   ~ 0
-CTRL
-Connection ~ 5300 4100
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5E2A203B
-P 7100 3300
-AR Path="/5E2A203B" Ref="J?"  Part="1" 
-AR Path="/5E295EB5/5E2A203B" Ref="J18"  Part="1" 
-AR Path="/5E2A129E/5E2A203B" Ref="J10"  Part="1" 
-AR Path="/5E2A9DD8/5E2A203B" Ref="J26"  Part="1" 
-F 0 "J26" H 7018 2975 50  0000 C CNN
-F 1 "Conn_01x03" H 7018 3066 50  0000 C CNN
-F 2 "" H 7100 3300 50  0001 C CNN
-F 3 "~" H 7100 3300 50  0001 C CNN
-	1    7100 3300
-	1    0    0    1   
-$EndComp
-Text HLabel 4550 4100 0    50   Input ~ 0
-CTRL
-$Comp
-L Relay:G5LE-1 K?
-U 1 1 5E2AAE13
-P 5900 3400
-AR Path="/5E2AAE13" Ref="K?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE13" Ref="K14"  Part="1" 
-AR Path="/5E2A129E/5E2AAE13" Ref="K6"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE13" Ref="K22"  Part="1" 
-F 0 "K22" H 6330 3446 50  0000 L CNN
-F 1 "G5LE-1" H 6330 3355 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 6350 3350 50  0001 L CNN
-F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 5900 3000 50  0001 C CNN
-	1    5900 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 3700 6100 3800
-Wire Wire Line
-	6100 3800 6800 3800
-Wire Wire Line
-	6800 3800 6800 3400
-Wire Wire Line
-	6800 3400 6900 3400
-Wire Wire Line
-	6200 3100 6200 3000
-Wire Wire Line
-	6200 3000 6700 3000
-Wire Wire Line
-	6700 3000 6700 3300
-Wire Wire Line
-	6700 3300 6900 3300
-Wire Wire Line
-	6000 3100 6000 2900
-Wire Wire Line
-	6000 2900 6800 2900
-Wire Wire Line
-	6800 2900 6800 3200
-Wire Wire Line
-	6800 3200 6900 3200
-$Comp
-L Device:D_Schottky D?
-U 1 1 5E2A2035
-P 5400 3400
-AR Path="/5E2A2035" Ref="D?"  Part="1" 
-AR Path="/5E295EB5/5E2A2035" Ref="D16"  Part="1" 
-AR Path="/5E2A129E/5E2A2035" Ref="D8"  Part="1" 
-AR Path="/5E2A9DD8/5E2A2035" Ref="D24"  Part="1" 
-F 0 "D24" V 5354 3322 50  0000 R CNN
-F 1 "D_Schottky" V 5445 3322 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5400 3400 50  0001 C CNN
-F 3 "~" H 5400 3400 50  0001 C CNN
-	1    5400 3400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 3250 5400 3000
-Wire Wire Line
-	5400 3000 5700 3000
-Wire Wire Line
-	5700 3000 5700 3100
-Wire Wire Line
-	5400 3550 5400 3800
-Wire Wire Line
-	5400 3800 5700 3800
-Wire Wire Line
-	5700 3800 5700 3700
-$Comp
-L power:+5V #PWR?
-U 1 1 5E2A2601
-P 5700 2900
-AR Path="/5E2A2601" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2A2601" Ref="#PWR050"  Part="1" 
-AR Path="/5E2A129E/5E2A2601" Ref="#PWR026"  Part="1" 
-AR Path="/5E2A9DD8/5E2A2601" Ref="#PWR074"  Part="1" 
-F 0 "#PWR074" H 5700 2750 50  0001 C CNN
-F 1 "+5V" H 5715 3073 50  0000 C CNN
-F 2 "" H 5700 2900 50  0001 C CNN
-F 3 "" H 5700 2900 50  0001 C CNN
-	1    5700 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 2900 5700 3000
-Connection ~ 5700 3000
-$Comp
-L ma4evse:AO3402 Q?
-U 1 1 5E2A2037
-P 5600 4100
-AR Path="/5E2A2037" Ref="Q?"  Part="1" 
-AR Path="/5E295EB5/5E2A2037" Ref="Q10"  Part="1" 
-AR Path="/5E2A129E/5E2A2037" Ref="Q2"  Part="1" 
-AR Path="/5E2A9DD8/5E2A2037" Ref="Q18"  Part="1" 
-F 0 "Q18" H 5806 4146 50  0000 L CNN
-F 1 "AO3402" H 5806 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 4200 50  0001 C CNN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3402.pdf" H 5600 4100 50  0001 C CNN
-	1    5600 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2A2038
-P 5700 4500
-AR Path="/5E2A2038" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2A2038" Ref="#PWR064"  Part="1" 
-AR Path="/5E2A129E/5E2A2038" Ref="#PWR040"  Part="1" 
-AR Path="/5E2A9DD8/5E2A2038" Ref="#PWR088"  Part="1" 
-F 0 "#PWR088" H 5700 4250 50  0001 C CNN
-F 1 "GND" H 5705 4327 50  0000 C CNN
-F 2 "" H 5700 4500 50  0001 C CNN
-F 3 "" H 5700 4500 50  0001 C CNN
-	1    5700 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 4500 5700 4300
-Wire Wire Line
-	5700 3900 5700 3800
-Connection ~ 5700 3800
-$Comp
-L Device:R_Small R?
-U 1 1 5E2A2039
-P 5300 4300
-AR Path="/5E2A2039" Ref="R?"  Part="1" 
-AR Path="/5E295EB5/5E2A2039" Ref="R16"  Part="1" 
-AR Path="/5E2A129E/5E2A2039" Ref="R6"  Part="1" 
-AR Path="/5E2A9DD8/5E2A2039" Ref="R24"  Part="1" 
-F 0 "R24" H 5241 4254 50  0000 R CNN
-F 1 "10k" H 5241 4345 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 4300 50  0001 C CNN
-F 3 "~" H 5300 4300 50  0001 C CNN
-	1    5300 4300
-	1    0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2A203A
-P 5300 4500
-AR Path="/5E2A203A" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2A203A" Ref="#PWR056"  Part="1" 
-AR Path="/5E2A129E/5E2A203A" Ref="#PWR032"  Part="1" 
-AR Path="/5E2A9DD8/5E2A203A" Ref="#PWR080"  Part="1" 
-F 0 "#PWR080" H 5300 4250 50  0001 C CNN
-F 1 "GND" H 5305 4327 50  0000 C CNN
-F 2 "" H 5300 4500 50  0001 C CNN
-F 3 "" H 5300 4500 50  0001 C CNN
-	1    5300 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 4500 5300 4400
-Wire Wire Line
-	5300 4200 5300 4100
-Wire Wire Line
-	5300 4100 5400 4100
-Wire Wire Line
-	5300 4100 4550 4100
-Text Label 4550 4100 0    50   ~ 0
-CTRL
-Connection ~ 5300 4100
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5E2AAE12
-P 7100 3300
-AR Path="/5E2AAE12" Ref="J?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE12" Ref="J21"  Part="1" 
-AR Path="/5E2A129E/5E2AAE12" Ref="J13"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE12" Ref="J29"  Part="1" 
-F 0 "J29" H 7018 2975 50  0000 C CNN
-F 1 "Conn_01x03" H 7018 3066 50  0000 C CNN
-F 2 "" H 7100 3300 50  0001 C CNN
-F 3 "~" H 7100 3300 50  0001 C CNN
-	1    7100 3300
-	1    0    0    1   
-$EndComp
-Text HLabel 4550 4100 0    50   Input ~ 0
-CTRL
-$Comp
-L Relay:G5LE-1 K?
-U 1 1 5E2A25F7
-P 5900 3400
-AR Path="/5E2A25F7" Ref="K?"  Part="1" 
-AR Path="/5E295EB5/5E2A25F7" Ref="K11"  Part="1" 
-AR Path="/5E2A129E/5E2A25F7" Ref="K3"  Part="1" 
-AR Path="/5E2A9DD8/5E2A25F7" Ref="K19"  Part="1" 
-F 0 "K19" H 6330 3446 50  0000 L CNN
-F 1 "G5LE-1" H 6330 3355 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 6350 3350 50  0001 L CNN
-F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 5900 3000 50  0001 C CNN
-	1    5900 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 3700 6100 3800
-Wire Wire Line
-	6100 3800 6800 3800
-Wire Wire Line
-	6800 3800 6800 3400
-Wire Wire Line
-	6800 3400 6900 3400
-Wire Wire Line
-	6200 3100 6200 3000
-Wire Wire Line
-	6200 3000 6700 3000
-Wire Wire Line
-	6700 3000 6700 3300
-Wire Wire Line
-	6700 3300 6900 3300
-Wire Wire Line
-	6000 3100 6000 2900
-Wire Wire Line
-	6000 2900 6800 2900
-Wire Wire Line
-	6800 2900 6800 3200
-Wire Wire Line
-	6800 3200 6900 3200
-$Comp
-L Device:D_Schottky D?
-U 1 1 5E2AAE0C
-P 5400 3400
-AR Path="/5E2AAE0C" Ref="D?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE0C" Ref="D19"  Part="1" 
-AR Path="/5E2A129E/5E2AAE0C" Ref="D11"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE0C" Ref="D27"  Part="1" 
-F 0 "D27" V 5354 3322 50  0000 R CNN
-F 1 "D_Schottky" V 5445 3322 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5400 3400 50  0001 C CNN
-F 3 "~" H 5400 3400 50  0001 C CNN
-	1    5400 3400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 3250 5400 3000
-Wire Wire Line
-	5400 3000 5700 3000
-Wire Wire Line
-	5700 3000 5700 3100
-Wire Wire Line
-	5400 3550 5400 3800
-Wire Wire Line
-	5400 3800 5700 3800
-Wire Wire Line
-	5700 3800 5700 3700
-$Comp
-L power:+5V #PWR?
-U 1 1 5E2AAE0D
-P 5700 2900
-AR Path="/5E2AAE0D" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE0D" Ref="#PWR051"  Part="1" 
-AR Path="/5E2A129E/5E2AAE0D" Ref="#PWR027"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE0D" Ref="#PWR075"  Part="1" 
-F 0 "#PWR075" H 5700 2750 50  0001 C CNN
-F 1 "+5V" H 5715 3073 50  0000 C CNN
-F 2 "" H 5700 2900 50  0001 C CNN
-F 3 "" H 5700 2900 50  0001 C CNN
-	1    5700 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 2900 5700 3000
-Connection ~ 5700 3000
-$Comp
-L ma4evse:AO3402 Q?
-U 1 1 5E2AAE0E
-P 5600 4100
-AR Path="/5E2AAE0E" Ref="Q?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE0E" Ref="Q13"  Part="1" 
-AR Path="/5E2A129E/5E2AAE0E" Ref="Q5"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE0E" Ref="Q21"  Part="1" 
-F 0 "Q21" H 5806 4146 50  0000 L CNN
-F 1 "AO3402" H 5806 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 4200 50  0001 C CNN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3402.pdf" H 5600 4100 50  0001 C CNN
-	1    5600 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2AAE0F
-P 5700 4500
-AR Path="/5E2AAE0F" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE0F" Ref="#PWR067"  Part="1" 
-AR Path="/5E2A129E/5E2AAE0F" Ref="#PWR043"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE0F" Ref="#PWR091"  Part="1" 
-F 0 "#PWR091" H 5700 4250 50  0001 C CNN
-F 1 "GND" H 5705 4327 50  0000 C CNN
-F 2 "" H 5700 4500 50  0001 C CNN
-F 3 "" H 5700 4500 50  0001 C CNN
-	1    5700 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 4500 5700 4300
-Wire Wire Line
-	5700 3900 5700 3800
-Connection ~ 5700 3800
-$Comp
-L Device:R_Small R?
-U 1 1 5E2AAE10
-P 5300 4300
-AR Path="/5E2AAE10" Ref="R?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE10" Ref="R19"  Part="1" 
-AR Path="/5E2A129E/5E2AAE10" Ref="R11"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE10" Ref="R27"  Part="1" 
-F 0 "R27" H 5241 4254 50  0000 R CNN
-F 1 "10k" H 5241 4345 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 4300 50  0001 C CNN
-F 3 "~" H 5300 4300 50  0001 C CNN
-	1    5300 4300
-	1    0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2AAE11
-P 5300 4500
-AR Path="/5E2AAE11" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE11" Ref="#PWR059"  Part="1" 
-AR Path="/5E2A129E/5E2AAE11" Ref="#PWR035"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE11" Ref="#PWR083"  Part="1" 
-F 0 "#PWR083" H 5300 4250 50  0001 C CNN
-F 1 "GND" H 5305 4327 50  0000 C CNN
-F 2 "" H 5300 4500 50  0001 C CNN
-F 3 "" H 5300 4500 50  0001 C CNN
-	1    5300 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 4500 5300 4400
-Wire Wire Line
-	5300 4200 5300 4100
-Wire Wire Line
-	5300 4100 5400 4100
-Wire Wire Line
-	5300 4100 4550 4100
-Text Label 4550 4100 0    50   ~ 0
-CTRL
-Connection ~ 5300 4100
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5E2AAE2A
-P 7100 3300
-AR Path="/5E2AAE2A" Ref="J?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE2A" Ref="J24"  Part="1" 
-AR Path="/5E2A129E/5E2AAE2A" Ref="J16"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE2A" Ref="J32"  Part="1" 
-F 0 "J32" H 7018 2975 50  0000 C CNN
-F 1 "Conn_01x03" H 7018 3066 50  0000 C CNN
-F 2 "" H 7100 3300 50  0001 C CNN
-F 3 "~" H 7100 3300 50  0001 C CNN
-	1    7100 3300
-	1    0    0    1   
-$EndComp
-Text HLabel 4550 4100 0    50   Input ~ 0
-CTRL
-$Comp
-L Relay:G5LE-1 K?
-U 1 1 5E2AAE23
-P 5900 3400
-AR Path="/5E2AAE23" Ref="K?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE23" Ref="K16"  Part="1" 
-AR Path="/5E2A129E/5E2AAE23" Ref="K8"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE23" Ref="K24"  Part="1" 
-F 0 "K24" H 6330 3446 50  0000 L CNN
-F 1 "G5LE-1" H 6330 3355 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 6350 3350 50  0001 L CNN
-F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 5900 3000 50  0001 C CNN
-	1    5900 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 3700 6100 3800
-Wire Wire Line
-	6100 3800 6800 3800
-Wire Wire Line
-	6800 3800 6800 3400
-Wire Wire Line
-	6800 3400 6900 3400
-Wire Wire Line
-	6200 3100 6200 3000
-Wire Wire Line
-	6200 3000 6700 3000
-Wire Wire Line
-	6700 3000 6700 3300
-Wire Wire Line
-	6700 3300 6900 3300
-Wire Wire Line
-	6000 3100 6000 2900
-Wire Wire Line
-	6000 2900 6800 2900
-Wire Wire Line
-	6800 2900 6800 3200
-Wire Wire Line
-	6800 3200 6900 3200
-$Comp
-L Device:D_Schottky D?
-U 1 1 5E2AAE24
-P 5400 3400
-AR Path="/5E2AAE24" Ref="D?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE24" Ref="D22"  Part="1" 
-AR Path="/5E2A129E/5E2AAE24" Ref="D14"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE24" Ref="D30"  Part="1" 
-F 0 "D30" V 5354 3322 50  0000 R CNN
-F 1 "D_Schottky" V 5445 3322 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5400 3400 50  0001 C CNN
-F 3 "~" H 5400 3400 50  0001 C CNN
-	1    5400 3400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 3250 5400 3000
-Wire Wire Line
-	5400 3000 5700 3000
-Wire Wire Line
-	5700 3000 5700 3100
-Wire Wire Line
-	5400 3550 5400 3800
-Wire Wire Line
-	5400 3800 5700 3800
-Wire Wire Line
-	5700 3800 5700 3700
-$Comp
-L power:+5V #PWR?
-U 1 1 5E2AAE15
-P 5700 2900
-AR Path="/5E2AAE15" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE15" Ref="#PWR052"  Part="1" 
-AR Path="/5E2A129E/5E2AAE15" Ref="#PWR028"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE15" Ref="#PWR076"  Part="1" 
-F 0 "#PWR076" H 5700 2750 50  0001 C CNN
-F 1 "+5V" H 5715 3073 50  0000 C CNN
-F 2 "" H 5700 2900 50  0001 C CNN
-F 3 "" H 5700 2900 50  0001 C CNN
-	1    5700 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 2900 5700 3000
-Connection ~ 5700 3000
-$Comp
-L ma4evse:AO3402 Q?
-U 1 1 5E2AAE26
-P 5600 4100
-AR Path="/5E2AAE26" Ref="Q?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE26" Ref="Q16"  Part="1" 
-AR Path="/5E2A129E/5E2AAE26" Ref="Q8"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE26" Ref="Q24"  Part="1" 
-F 0 "Q24" H 5806 4146 50  0000 L CNN
-F 1 "AO3402" H 5806 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 4200 50  0001 C CNN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3402.pdf" H 5600 4100 50  0001 C CNN
-	1    5600 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2AAE27
-P 5700 4500
-AR Path="/5E2AAE27" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE27" Ref="#PWR070"  Part="1" 
-AR Path="/5E2A129E/5E2AAE27" Ref="#PWR046"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE27" Ref="#PWR094"  Part="1" 
-F 0 "#PWR094" H 5700 4250 50  0001 C CNN
-F 1 "GND" H 5705 4327 50  0000 C CNN
-F 2 "" H 5700 4500 50  0001 C CNN
-F 3 "" H 5700 4500 50  0001 C CNN
-	1    5700 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 4500 5700 4300
-Wire Wire Line
-	5700 3900 5700 3800
-Connection ~ 5700 3800
-$Comp
-L Device:R_Small R?
-U 1 1 5E2AAE28
-P 5300 4300
-AR Path="/5E2AAE28" Ref="R?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE28" Ref="R22"  Part="1" 
-AR Path="/5E2A129E/5E2AAE28" Ref="R14"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE28" Ref="R30"  Part="1" 
-F 0 "R30" H 5241 4254 50  0000 R CNN
-F 1 "10k" H 5241 4345 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 4300 50  0001 C CNN
-F 3 "~" H 5300 4300 50  0001 C CNN
-	1    5300 4300
-	1    0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2A2605
-P 5300 4500
-AR Path="/5E2A2605" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2A2605" Ref="#PWR058"  Part="1" 
-AR Path="/5E2A129E/5E2A2605" Ref="#PWR034"  Part="1" 
-AR Path="/5E2A9DD8/5E2A2605" Ref="#PWR082"  Part="1" 
-F 0 "#PWR082" H 5300 4250 50  0001 C CNN
-F 1 "GND" H 5305 4327 50  0000 C CNN
-F 2 "" H 5300 4500 50  0001 C CNN
-F 3 "" H 5300 4500 50  0001 C CNN
-	1    5300 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 4500 5300 4400
-Wire Wire Line
-	5300 4200 5300 4100
-Wire Wire Line
-	5300 4100 5400 4100
-Wire Wire Line
-	5300 4100 4550 4100
-Text Label 4550 4100 0    50   ~ 0
-CTRL
-Connection ~ 5300 4100
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5E2A25FE
-P 7100 3300
-AR Path="/5E2A25FE" Ref="J?"  Part="1" 
-AR Path="/5E295EB5/5E2A25FE" Ref="J19"  Part="1" 
-AR Path="/5E2A129E/5E2A25FE" Ref="J11"  Part="1" 
-AR Path="/5E2A9DD8/5E2A25FE" Ref="J27"  Part="1" 
-F 0 "J27" H 7018 2975 50  0000 C CNN
-F 1 "Conn_01x03" H 7018 3066 50  0000 C CNN
-F 2 "" H 7100 3300 50  0001 C CNN
-F 3 "~" H 7100 3300 50  0001 C CNN
-	1    7100 3300
-	1    0    0    1   
-$EndComp
-Text HLabel 4550 4100 0    50   Input ~ 0
-CTRL
-$Comp
-L Relay:G5LE-1 K?
-U 1 1 5E2AAE0B
-P 5900 3400
-AR Path="/5E2AAE0B" Ref="K?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE0B" Ref="K13"  Part="1" 
-AR Path="/5E2A129E/5E2AAE0B" Ref="K5"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE0B" Ref="K21"  Part="1" 
-F 0 "K21" H 6330 3446 50  0000 L CNN
-F 1 "G5LE-1" H 6330 3355 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 6350 3350 50  0001 L CNN
-F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 5900 3000 50  0001 C CNN
-	1    5900 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 3700 6100 3800
-Wire Wire Line
-	6100 3800 6800 3800
-Wire Wire Line
-	6800 3800 6800 3400
-Wire Wire Line
-	6800 3400 6900 3400
-Wire Wire Line
-	6200 3100 6200 3000
-Wire Wire Line
-	6200 3000 6700 3000
-Wire Wire Line
-	6700 3000 6700 3300
-Wire Wire Line
-	6700 3300 6900 3300
-Wire Wire Line
-	6000 3100 6000 2900
-Wire Wire Line
-	6000 2900 6800 2900
-Wire Wire Line
-	6800 2900 6800 3200
-Wire Wire Line
-	6800 3200 6900 3200
 $Comp
 L Device:D_Schottky D?
 U 1 1 5E2AAE1C
 P 5400 3400
 AR Path="/5E2AAE1C" Ref="D?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE1C" Ref="D21"  Part="1" 
-AR Path="/5E2A129E/5E2AAE1C" Ref="D13"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE1C" Ref="D29"  Part="1" 
-F 0 "D29" V 5354 3322 50  0000 R CNN
+AR Path="/5E295EB5/5E2AAE1C" Ref="D8"  Part="1" 
+AR Path="/5E2A129E/5E2AAE1C" Ref="D7"  Part="1" 
+AR Path="/5E2A9DD8/5E2AAE1C" Ref="D9"  Part="1" 
+F 0 "D9" V 5354 3322 50  0000 R CNN
 F 1 "D_Schottky" V 5445 3322 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-123" H 5400 3400 50  0001 C CNN
 F 3 "~" H 5400 3400 50  0001 C CNN
 	1    5400 3400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5400 3250 5400 3000
-Wire Wire Line
-	5400 3000 5700 3000
-Wire Wire Line
-	5700 3000 5700 3100
-Wire Wire Line
-	5400 3550 5400 3800
-Wire Wire Line
-	5400 3800 5700 3800
-Wire Wire Line
-	5700 3800 5700 3700
 $Comp
 L power:+5V #PWR?
 U 1 1 5E2A25F9
 P 5700 2900
 AR Path="/5E2A25F9" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2A25F9" Ref="#PWR049"  Part="1" 
-AR Path="/5E2A129E/5E2A25F9" Ref="#PWR025"  Part="1" 
-AR Path="/5E2A9DD8/5E2A25F9" Ref="#PWR073"  Part="1" 
-F 0 "#PWR073" H 5700 2750 50  0001 C CNN
+AR Path="/5E295EB5/5E2A25F9" Ref="#PWR043"  Part="1" 
+AR Path="/5E2A129E/5E2A25F9" Ref="#PWR040"  Part="1" 
+AR Path="/5E2A9DD8/5E2A25F9" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 5700 2750 50  0001 C CNN
 F 1 "+5V" H 5715 3073 50  0000 C CNN
 F 2 "" H 5700 2900 50  0001 C CNN
 F 3 "" H 5700 2900 50  0001 C CNN
 	1    5700 2900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5700 2900 5700 3000
-Connection ~ 5700 3000
 $Comp
 L ma4evse:AO3402 Q?
 U 1 1 5E2AAE1E
 P 5600 4100
 AR Path="/5E2AAE1E" Ref="Q?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE1E" Ref="Q15"  Part="1" 
-AR Path="/5E2A129E/5E2AAE1E" Ref="Q7"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE1E" Ref="Q23"  Part="1" 
-F 0 "Q23" H 5806 4146 50  0000 L CNN
+AR Path="/5E295EB5/5E2AAE1E" Ref="Q2"  Part="1" 
+AR Path="/5E2A129E/5E2AAE1E" Ref="Q1"  Part="1" 
+AR Path="/5E2A9DD8/5E2AAE1E" Ref="Q3"  Part="1" 
+F 0 "Q3" H 5806 4146 50  0000 L CNN
 F 1 "AO3402" H 5806 4055 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 4200 50  0001 C CNN
 F 3 "http://www.aosmd.com/pdfs/datasheet/AO3402.pdf" H 5600 4100 50  0001 C CNN
@@ -1356,30 +116,25 @@ L power:GND #PWR?
 U 1 1 5E2AAE1F
 P 5700 4500
 AR Path="/5E2AAE1F" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE1F" Ref="#PWR069"  Part="1" 
-AR Path="/5E2A129E/5E2AAE1F" Ref="#PWR045"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE1F" Ref="#PWR093"  Part="1" 
-F 0 "#PWR093" H 5700 4250 50  0001 C CNN
+AR Path="/5E295EB5/5E2AAE1F" Ref="#PWR045"  Part="1" 
+AR Path="/5E2A129E/5E2AAE1F" Ref="#PWR042"  Part="1" 
+AR Path="/5E2A9DD8/5E2AAE1F" Ref="#PWR048"  Part="1" 
+F 0 "#PWR048" H 5700 4250 50  0001 C CNN
 F 1 "GND" H 5705 4327 50  0000 C CNN
 F 2 "" H 5700 4500 50  0001 C CNN
 F 3 "" H 5700 4500 50  0001 C CNN
 	1    5700 4500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5700 4500 5700 4300
-Wire Wire Line
-	5700 3900 5700 3800
-Connection ~ 5700 3800
 $Comp
 L Device:R_Small R?
 U 1 1 5E2AAE20
 P 5300 4300
 AR Path="/5E2AAE20" Ref="R?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE20" Ref="R21"  Part="1" 
-AR Path="/5E2A129E/5E2AAE20" Ref="R13"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE20" Ref="R29"  Part="1" 
-F 0 "R29" H 5241 4254 50  0000 R CNN
+AR Path="/5E295EB5/5E2AAE20" Ref="R8"  Part="1" 
+AR Path="/5E2A129E/5E2AAE20" Ref="R7"  Part="1" 
+AR Path="/5E2A9DD8/5E2AAE20" Ref="R9"  Part="1" 
+F 0 "R9" H 5241 4254 50  0000 R CNN
 F 1 "10k" H 5241 4345 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 4300 50  0001 C CNN
 F 3 "~" H 5300 4300 50  0001 C CNN
@@ -1391,42 +146,48 @@ L power:GND #PWR?
 U 1 1 5E2AAE21
 P 5300 4500
 AR Path="/5E2AAE21" Ref="#PWR?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE21" Ref="#PWR061"  Part="1" 
-AR Path="/5E2A129E/5E2AAE21" Ref="#PWR037"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE21" Ref="#PWR085"  Part="1" 
-F 0 "#PWR085" H 5300 4250 50  0001 C CNN
+AR Path="/5E295EB5/5E2AAE21" Ref="#PWR044"  Part="1" 
+AR Path="/5E2A129E/5E2AAE21" Ref="#PWR041"  Part="1" 
+AR Path="/5E2A9DD8/5E2AAE21" Ref="#PWR047"  Part="1" 
+F 0 "#PWR047" H 5300 4250 50  0001 C CNN
 F 1 "GND" H 5305 4327 50  0000 C CNN
 F 2 "" H 5300 4500 50  0001 C CNN
 F 3 "" H 5300 4500 50  0001 C CNN
 	1    5300 4500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5300 4500 5300 4400
-Wire Wire Line
-	5300 4200 5300 4100
-Wire Wire Line
-	5300 4100 5400 4100
-Wire Wire Line
-	5300 4100 4550 4100
-Text Label 4550 4100 0    50   ~ 0
-CTRL
-Connection ~ 5300 4100
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5E2AAE1A
 P 7100 3300
 AR Path="/5E2AAE1A" Ref="J?"  Part="1" 
-AR Path="/5E295EB5/5E2AAE1A" Ref="J22"  Part="1" 
-AR Path="/5E2A129E/5E2AAE1A" Ref="J14"  Part="1" 
-AR Path="/5E2A9DD8/5E2AAE1A" Ref="J30"  Part="1" 
-F 0 "J30" H 7018 2975 50  0000 C CNN
+AR Path="/5E295EB5/5E2AAE1A" Ref="J10"  Part="1" 
+AR Path="/5E2A129E/5E2AAE1A" Ref="J9"  Part="1" 
+AR Path="/5E2A9DD8/5E2AAE1A" Ref="J11"  Part="1" 
+F 0 "J11" H 7018 2975 50  0000 C CNN
 F 1 "Conn_01x03" H 7018 3066 50  0000 C CNN
-F 2 "" H 7100 3300 50  0001 C CNN
+F 2 "Connector_JST:JST_NV_B03P-NV_1x03_P5.00mm_Vertical" H 7100 3300 50  0001 C CNN
 F 3 "~" H 7100 3300 50  0001 C CNN
 	1    7100 3300
 	1    0    0    1   
 $EndComp
 Text HLabel 4550 4100 0    50   Input ~ 0
 CTRL
+$Comp
+L Relay:G5LE-1 K?
+U 1 1 5E2A2034
+P 5900 3400
+AR Path="/5E2A2034" Ref="K?"  Part="1" 
+AR Path="/5E295EB5/5E2A2034" Ref="K2"  Part="1" 
+AR Path="/5E2A129E/5E2A2034" Ref="K1"  Part="1" 
+AR Path="/5E2A9DD8/5E2A2034" Ref="K3"  Part="1" 
+F 0 "K3" H 6330 3446 50  0000 L CNN
+F 1 "G5LE-1" H 6330 3355 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 6350 3350 50  0001 L CNN
+F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 5900 3000 50  0001 C CNN
+	1    5900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2900 6800 2900
 $EndSCHEMATC
