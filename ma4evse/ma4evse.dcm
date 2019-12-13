@@ -65,12 +65,60 @@ D PyCom Wifi, BLE, LoRA, SigFox devkit
 F https://docs.pycom.io/gitbook/assets/specsheets/Pycom_002_Specsheets_FiPy_v2.pdf
 $ENDCMP
 #
+$CMP HCPL0730
+D Low Input Current high Gain Split Darlington Optocouplers
+K darlington optocoupler
+F http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf
+$ENDCMP
+#
+$CMP HCPL0731
+D Low Input Current high Gain Split Darlington Optocouplers, DIP-8
+K darlington optocoupler
+F http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf
+$ENDCMP
+#
+$CMP JS202011CQN
+D Switch, double dual pole double throw
+K switch single-pole double-throw spdt ON-ON
+F ~
+$ENDCMP
+#
+$CMP MCP23S08-SO
+D 8-Bit I/O Expander with Serial Interface
+K gpio, expander, spi
+F https://ww1.microchip.com/downloads/en/DeviceDoc/21919e.pdf
+$ENDCMP
+#
 $CMP NFCv4
 F http://www.elechouse.com/elechouse/images/product/PN532_module_V3/PN532_%20Manual_V3.pdf
 $ENDCMP
 #
+$CMP P6SMB16CA
+D Transient Voltage Suppression Diodes
+K diode
+F https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_p6smb_datasheet.pdf.pdf
+$ENDCMP
+#
 $CMP RCMB121
 F http://www.promac.com.pl/wp-content/uploads/2016/10/RCMB121_D00267_D_XXEN.pdf
+$ENDCMP
+#
+$CMP SW_DPDT_x2
+D Switch, double dual pole double throw
+K switch single-pole double-throw spdt ON-ON
+F https://www.mouser.fr/datasheet/2/60/js-1382693.pdf
+$ENDCMP
+#
+$CMP TC7660SxO
+D Charge Pump DC-to-DC Converter, -1.5 to -12V, 20mA, SOIC-8
+K charge pump DC-to-DC converter
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21468B.pdf
+$ENDCMP
+#
+$CMP UA741-D
+D General-purpose single operational amplifier
+K single opamp
+F https://www.ti.com/lit/ds/slos094g/slos094g.pdf
 $ENDCMP
 #
 #End Doc Library
