@@ -1356,4 +1356,48 @@ Wire Notes Line
 	6850 4900 11200 4900
 Text Notes 8750 2950 0    50   ~ 0
 Relay Control circuitry
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E448D0E
+P 3200 6550
+F 0 "H1" H 3300 6596 50  0000 L CNN
+F 1 "MountingHole" H 3300 6505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3200 6550 50  0001 C CNN
+F 3 "~" H 3200 6550 50  0001 C CNN
+	1    3200 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E4499AD
+P 3200 6750
+F 0 "H2" H 3300 6796 50  0000 L CNN
+F 1 "MountingHole" H 3300 6705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3200 6750 50  0001 C CNN
+F 3 "~" H 3200 6750 50  0001 C CNN
+	1    3200 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5E449BC8
+P 3200 6950
+F 0 "H3" H 3300 6996 50  0000 L CNN
+F 1 "MountingHole" H 3300 6905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3200 6950 50  0001 C CNN
+F 3 "~" H 3200 6950 50  0001 C CNN
+	1    3200 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5E449F57
+P 3200 7150
+F 0 "H4" H 3300 7196 50  0000 L CNN
+F 1 "MountingHole" H 3300 7105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3200 7150 50  0001 C CNN
+F 3 "~" H 3200 7150 50  0001 C CNN
+	1    3200 7150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
