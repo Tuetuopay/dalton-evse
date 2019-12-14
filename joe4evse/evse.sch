@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 6 3
 Title "Joe 4 EVSE"
 Date "2019-12-10"
 Rev "v1.0"
@@ -19,7 +19,7 @@ U 1 1 5DF30EF0
 P 6700 1950
 F 0 "U6" H 6850 1700 50  0000 L CNN
 F 1 "UA741-D" H 6850 1800 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6750 2000 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6750 2000 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/slos094g/slos094g.pdf" H 6750 2100 50  0001 C CNN
 	1    6700 1950
 	1    0    0    -1  
@@ -233,32 +233,10 @@ U 1 1 5DF4C333
 P 5900 4450
 F 0 "U7" H 5900 4967 50  0000 C CNN
 F 1 "HCPL0731" H 5900 4876 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 5875 4450 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5875 4450 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf" H 5875 4450 50  0001 C CNN
 	1    5900 4450
 	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4001 D11
-U 1 1 5DF52C39
-P 5250 4150
-F 0 "D11" H 5250 3934 50  0000 C CNN
-F 1 "1N4001" H 5250 4025 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5250 3975 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5250 4150 50  0001 C CNN
-	1    5250 4150
-	-1   0    0    1   
-$EndComp
-$Comp
-L Diode:1N4001 D12
-U 1 1 5DF54676
-P 5250 4750
-F 0 "D12" H 5250 4534 50  0000 C CNN
-F 1 "1N4001" H 5250 4625 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5250 4575 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5250 4750 50  0001 C CNN
-	1    5250 4750
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5400 4150 5600 4150
@@ -278,8 +256,8 @@ L Device:R_Small R16
 U 1 1 5DF589D7
 P 4900 4150
 F 0 "R16" V 4704 4150 50  0000 C CNN
-F 1 "200k" V 4795 4150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4900 4150 50  0001 C CNN
+F 1 "100k" V 4795 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4900 4150 50  0001 C CNN
 F 3 "~" H 4900 4150 50  0001 C CNN
 	1    4900 4150
 	0    1    1    0   
@@ -289,8 +267,8 @@ L Device:R_Small R17
 U 1 1 5DF599D9
 P 4900 4750
 F 0 "R17" V 4704 4750 50  0000 C CNN
-F 1 "200k" V 4795 4750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4900 4750 50  0001 C CNN
+F 1 "100k" V 4795 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4900 4750 50  0001 C CNN
 F 3 "~" H 4900 4750 50  0001 C CNN
 	1    4900 4750
 	0    1    1    0   
@@ -299,14 +277,14 @@ Wire Wire Line
 	5000 4750 5100 4750
 Wire Wire Line
 	5100 4150 5000 4150
-Text Label 4200 4150 0    50   ~ 0
+Text Label 3900 4150 0    50   ~ 0
 AC_TEST_IN0
-Text Label 4200 4750 0    50   ~ 0
+Text Label 3900 4750 0    50   ~ 0
 AC_TEST_IN1
 Wire Wire Line
-	4200 4150 4800 4150
+	3900 4150 4500 4150
 Wire Wire Line
-	4200 4750 4800 4750
+	3900 4750 4500 4750
 $Comp
 L power:GND #PWR066
 U 1 1 5DF5D9A3
@@ -362,7 +340,7 @@ U 1 1 5DF66BC1
 P 5400 6750
 F 0 "D13" V 5354 6829 50  0000 L CNN
 F 1 "1N4148" V 5445 6829 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5400 6575 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 5400 6575 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5400 6750 50  0001 C CNN
 	1    5400 6750
 	0    1    1    0   
@@ -439,7 +417,7 @@ U 1 1 5DF73610
 P 3750 1950
 F 0 "U5" H 3400 2550 50  0000 C CNN
 F 1 "TC7660SxO" H 3400 2450 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3850 1850 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3850 1850 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21468B.pdf" H 3850 1850 50  0001 C CNN
 	1    3750 1950
 	1    0    0    -1  
@@ -699,4 +677,54 @@ F 3 "" H 3100 2650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3100 2150 3100 2650
+$Comp
+L ma4evse:S1A-13-F D11
+U 1 1 5E2401D6
+P 5250 4150
+F 0 "D11" H 5250 3934 50  0000 C CNN
+F 1 "S1A-13-F" H 5250 4025 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 5250 3975 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds16003.pdf" H 5250 4150 50  0001 C CNN
+	1    5250 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L ma4evse:S1A-13-F D12
+U 1 1 5E242A7A
+P 5250 4750
+F 0 "D12" H 5250 4534 50  0000 C CNN
+F 1 "S1A-13-F" H 5250 4625 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 5250 4575 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds16003.pdf" H 5250 4750 50  0001 C CNN
+	1    5250 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R20
+U 1 1 5E24E069
+P 4600 4150
+F 0 "R20" V 4404 4150 50  0000 C CNN
+F 1 "100k" V 4495 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4600 4150 50  0001 C CNN
+F 3 "~" H 4600 4150 50  0001 C CNN
+	1    4600 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R21
+U 1 1 5E24E314
+P 4600 4750
+F 0 "R21" V 4404 4750 50  0000 C CNN
+F 1 "100k" V 4495 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4600 4750 50  0001 C CNN
+F 3 "~" H 4600 4750 50  0001 C CNN
+	1    4600 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 4150 4800 4150
+Wire Wire Line
+	4800 4750 4700 4750
+Text Notes 3750 5250 0    50   ~ 0
+Two resistors are put in series to get a\nhigh voltage rating, as this is 230VAC.\nUse at least 1206 package, as it usually\ncan handle at least 300V.
 $EndSCHEMATC

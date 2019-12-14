@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 3
 Title "Joe 4 EVSE"
 Date "2019-12-10"
 Rev "v1.0"
@@ -365,7 +365,7 @@ Wire Notes Line
 Wire Notes Line
 	7150 2600 11200 2600
 Wire Notes Line
-	7150 500  7150 6300
+	7150 500  7150 3150
 Wire Notes Line
 	500  4100 2550 4100
 Text Notes 4100 2550 0    50   ~ 0
@@ -374,8 +374,6 @@ Text Notes 5750 2950 0    50   ~ 0
 UART selector
 Text Notes 7300 2500 0    50   ~ 0
 ModBUS interface
-Wire Notes Line
-	7150 4900 11200 4900
 Text Label 7250 1800 0    50   ~ 0
 MOD_RX
 $Comp
@@ -497,7 +495,7 @@ U 1 1 5E273351
 P 1000 3150
 F 0 "J3" H 918 2825 50  0000 C CNN
 F 1 "Conn_01x03" H 918 2916 50  0000 C CNN
-F 2 "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" H 1000 3150 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 1000 3150 50  0001 C CNN
 F 3 "~" H 1000 3150 50  0001 C CNN
 	1    1000 3150
 	-1   0    0    1   
@@ -534,58 +532,12 @@ F 3 "" H 1950 2750 50  0001 C CNN
 	1    1950 2750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J2
-U 1 1 5E290D0B
-P 9950 1650
-F 0 "J2" H 10030 1692 50  0000 L CNN
-F 1 "Conn_01x03" H 10030 1601 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 9950 1650 50  0001 C CNN
-F 3 "~" H 9950 1650 50  0001 C CNN
-	1    9950 1650
-	1    0    0    -1  
-$EndComp
-$Sheet
-S 10300 3550 550  400 
-U 5E2A129E
-F0 "relay_ac" 50
-F1 "relay.sch" 50
-F2 "CTRL" I L 10300 3750 50 
-$EndSheet
-$Sheet
-S 10300 2950 550  400 
-U 5E295EB5
-F0 "relay_jack" 50
-F1 "relay.sch" 50
-F2 "CTRL" I L 10300 3150 50 
-$EndSheet
-Wire Wire Line
-	10300 3150 9550 3150
-Text Label 9550 3150 0    50   ~ 0
-RELAY_JACK
-Wire Wire Line
-	10300 3750 9550 3750
-Text Label 9550 3750 0    50   ~ 0
-RELAY_AC
-Wire Wire Line
-	5750 5000 6500 5000
 Text Label 6500 5000 2    50   ~ 0
 RELAY_JACK
-Wire Wire Line
-	5750 5100 6500 5100
 Text Label 6500 5100 2    50   ~ 0
 RELAY_AC
-Wire Wire Line
-	10300 4350 9550 4350
-Text Label 9550 4350 0    50   ~ 0
+Text Label 9550 6100 0    50   ~ 0
 RELAY_RCMB
-$Sheet
-S 10300 4150 550  400 
-U 5E2A9DD8
-F0 "relay_rcmb" 50
-F1 "relay.sch" 50
-F2 "CTRL" I L 10300 4350 50 
-$EndSheet
 $Comp
 L Connector_Generic:Conn_01x02 J5
 U 1 1 5E01C3DF
@@ -703,7 +655,7 @@ NoConn ~ 10250 5400
 NoConn ~ 10250 5500
 NoConn ~ 10250 6000
 Wire Wire Line
-	9550 4350 9550 6100
+	9550 4100 9550 6100
 Wire Wire Line
 	9550 6100 10250 6100
 $Comp
@@ -711,7 +663,7 @@ L Device:R_Small R4
 U 1 1 5E06420A
 P 9900 5600
 F 0 "R4" H 9959 5646 50  0000 L CNN
-F 1 "1k" H 9959 5555 50  0000 L CNN
+F 1 "10k" H 9959 5555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9900 5600 50  0001 C CNN
 F 3 "~" H 9900 5600 50  0001 C CNN
 	1    9900 5600
@@ -721,8 +673,8 @@ $Comp
 L Device:R_Small R3
 U 1 1 5E065322
 P 9800 5600
-F 0 "R3" H 9742 5554 50  0000 R CNN
-F 1 "1k" H 9742 5645 50  0000 R CNN
+F 0 "R3" H 9741 5554 50  0000 R CNN
+F 1 "10k" H 9741 5645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9800 5600 50  0001 C CNN
 F 3 "~" H 9800 5600 50  0001 C CNN
 	1    9800 5600
@@ -999,4 +951,409 @@ Wire Wire Line
 	6300 1700 6300 950 
 Text Label 6300 950  3    50   ~ 0
 MOD_RX
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5E290D0B
+P 9950 1650
+F 0 "J2" H 10030 1692 50  0000 L CNN
+F 1 "Conn_01x03" H 10030 1601 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 9950 1650 50  0001 C CNN
+F 3 "~" H 9950 1650 50  0001 C CNN
+	1    9950 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4500 8950 4300
+Wire Wire Line
+	8550 4500 8550 4400
+Wire Wire Line
+	8550 4200 8550 4100
+Wire Wire Line
+	8550 4100 8650 4100
+Wire Wire Line
+	8550 4100 8250 4100
+Connection ~ 8550 4100
+$Comp
+L ma4evse:AO3402 Q2
+U 1 1 5E2B36F9
+P 8850 4100
+AR Path="/5E2B36F9" Ref="Q2"  Part="1" 
+AR Path="/5E295EB5/5E2B36F9" Ref="Q?"  Part="1" 
+AR Path="/5E2A129E/5E2B36F9" Ref="Q?"  Part="1" 
+AR Path="/5E2A9DD8/5E2B36F9" Ref="Q?"  Part="1" 
+F 0 "Q2" H 9056 4146 50  0000 L CNN
+F 1 "AO3402" H 9056 4055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9050 4200 50  0001 C CNN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3402.pdf" H 8850 4100 50  0001 C CNN
+	1    8850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR047
+U 1 1 5E2B36FF
+P 8950 4500
+AR Path="/5E2B36FF" Ref="#PWR047"  Part="1" 
+AR Path="/5E295EB5/5E2B36FF" Ref="#PWR?"  Part="1" 
+AR Path="/5E2A129E/5E2B36FF" Ref="#PWR?"  Part="1" 
+AR Path="/5E2A9DD8/5E2B36FF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR047" H 8950 4250 50  0001 C CNN
+F 1 "GND" H 8955 4327 50  0000 C CNN
+F 2 "" H 8950 4500 50  0001 C CNN
+F 3 "" H 8950 4500 50  0001 C CNN
+	1    8950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 5E2B3705
+P 8550 4300
+AR Path="/5E2B3705" Ref="R9"  Part="1" 
+AR Path="/5E295EB5/5E2B3705" Ref="R?"  Part="1" 
+AR Path="/5E2A129E/5E2B3705" Ref="R?"  Part="1" 
+AR Path="/5E2A9DD8/5E2B3705" Ref="R?"  Part="1" 
+F 0 "R9" H 8491 4254 50  0000 R CNN
+F 1 "10k" H 8491 4345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8550 4300 50  0001 C CNN
+F 3 "~" H 8550 4300 50  0001 C CNN
+	1    8550 4300
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR046
+U 1 1 5E2B370B
+P 8550 4500
+AR Path="/5E2B370B" Ref="#PWR046"  Part="1" 
+AR Path="/5E295EB5/5E2B370B" Ref="#PWR?"  Part="1" 
+AR Path="/5E2A129E/5E2B370B" Ref="#PWR?"  Part="1" 
+AR Path="/5E2A9DD8/5E2B370B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR046" H 8550 4250 50  0001 C CNN
+F 1 "GND" H 8555 4327 50  0000 C CNN
+F 2 "" H 8550 4500 50  0001 C CNN
+F 3 "" H 8550 4500 50  0001 C CNN
+	1    8550 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 5E31F941
+P 10900 3600
+F 0 "J11" H 10850 3700 50  0000 L CNN
+F 1 "Conn_01x02" H 10650 3800 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 10900 3600 50  0001 C CNN
+F 3 "~" H 10900 3600 50  0001 C CNN
+	1    10900 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 3600 10600 3600
+Wire Wire Line
+	10600 3600 10600 3500
+$Comp
+L power:+12V #PWR042
+U 1 1 5E32D814
+P 10600 3400
+F 0 "#PWR042" H 10600 3250 50  0001 C CNN
+F 1 "+12V" H 10615 3573 50  0000 C CNN
+F 2 "" H 10600 3400 50  0001 C CNN
+F 3 "" H 10600 3400 50  0001 C CNN
+	1    10600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 3700 10700 3700
+Wire Wire Line
+	10600 3900 10600 3800
+$Comp
+L power:GND #PWR048
+U 1 1 5E2C6B8C
+P 10600 4500
+AR Path="/5E2C6B8C" Ref="#PWR048"  Part="1" 
+AR Path="/5E295EB5/5E2C6B8C" Ref="#PWR?"  Part="1" 
+AR Path="/5E2A129E/5E2C6B8C" Ref="#PWR?"  Part="1" 
+AR Path="/5E2A9DD8/5E2C6B8C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR048" H 10600 4250 50  0001 C CNN
+F 1 "GND" H 10605 4327 50  0000 C CNN
+F 2 "" H 10600 4500 50  0001 C CNN
+F 3 "" H 10600 4500 50  0001 C CNN
+	1    10600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ma4evse:AO3402 Q3
+U 1 1 5E2C6B86
+P 10500 4100
+AR Path="/5E2C6B86" Ref="Q3"  Part="1" 
+AR Path="/5E295EB5/5E2C6B86" Ref="Q?"  Part="1" 
+AR Path="/5E2A129E/5E2C6B86" Ref="Q?"  Part="1" 
+AR Path="/5E2A9DD8/5E2C6B86" Ref="Q?"  Part="1" 
+F 0 "Q3" H 10706 4146 50  0000 L CNN
+F 1 "AO3402" H 10706 4055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10700 4200 50  0001 C CNN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3402.pdf" H 10500 4100 50  0001 C CNN
+	1    10500 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 4500 10600 4300
+Wire Wire Line
+	9550 4100 9850 4100
+Wire Wire Line
+	9850 3950 9850 4100
+Wire Wire Line
+	9850 3600 9850 3750
+$Comp
+L power:+3V3 #PWR043
+U 1 1 5E312B3B
+P 9850 3600
+F 0 "#PWR043" H 9850 3450 50  0001 C CNN
+F 1 "+3V3" H 9865 3773 50  0000 C CNN
+F 2 "" H 9850 3600 50  0001 C CNN
+F 3 "" H 9850 3600 50  0001 C CNN
+	1    9850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 5E2C6B92
+P 9850 3850
+AR Path="/5E2C6B92" Ref="R7"  Part="1" 
+AR Path="/5E295EB5/5E2C6B92" Ref="R?"  Part="1" 
+AR Path="/5E2A129E/5E2C6B92" Ref="R?"  Part="1" 
+AR Path="/5E2A9DD8/5E2C6B92" Ref="R?"  Part="1" 
+F 0 "R7" H 9791 3804 50  0000 R CNN
+F 1 "10k" H 9791 3895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9850 3850 50  0001 C CNN
+F 3 "~" H 9850 3850 50  0001 C CNN
+	1    9850 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:D_Schottky D9
+U 1 1 5E35A827
+P 10400 3650
+AR Path="/5E35A827" Ref="D9"  Part="1" 
+AR Path="/5E295EB5/5E35A827" Ref="D?"  Part="1" 
+AR Path="/5E2A129E/5E35A827" Ref="D?"  Part="1" 
+AR Path="/5E2A9DD8/5E35A827" Ref="D?"  Part="1" 
+F 0 "D9" V 10354 3572 50  0000 R CNN
+F 1 "D_Schottky" V 10445 3572 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 10400 3650 50  0001 C CNN
+F 3 "~" H 10400 3650 50  0001 C CNN
+	1    10400 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10400 3500 10600 3500
+Connection ~ 10600 3500
+Wire Wire Line
+	10600 3500 10600 3400
+Wire Wire Line
+	10400 3800 10600 3800
+Connection ~ 10600 3800
+Wire Wire Line
+	10600 3800 10600 3700
+Connection ~ 9850 4100
+Wire Wire Line
+	9850 4100 10300 4100
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 5E3A659A
+P 9250 3600
+F 0 "J10" H 9200 3700 50  0000 L CNN
+F 1 "Conn_01x02" H 9000 3800 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 9250 3600 50  0001 C CNN
+F 3 "~" H 9250 3600 50  0001 C CNN
+	1    9250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3600 8950 3600
+Wire Wire Line
+	8950 3600 8950 3500
+$Comp
+L power:+12V #PWR041
+U 1 1 5E3A65A2
+P 8950 3400
+F 0 "#PWR041" H 8950 3250 50  0001 C CNN
+F 1 "+12V" H 8965 3573 50  0000 C CNN
+F 2 "" H 8950 3400 50  0001 C CNN
+F 3 "" H 8950 3400 50  0001 C CNN
+	1    8950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3700 9050 3700
+Wire Wire Line
+	8950 3900 8950 3800
+$Comp
+L Device:D_Schottky D8
+U 1 1 5E3A65AA
+P 8750 3650
+AR Path="/5E3A65AA" Ref="D8"  Part="1" 
+AR Path="/5E295EB5/5E3A65AA" Ref="D?"  Part="1" 
+AR Path="/5E2A129E/5E3A65AA" Ref="D?"  Part="1" 
+AR Path="/5E2A9DD8/5E3A65AA" Ref="D?"  Part="1" 
+F 0 "D8" V 8704 3572 50  0000 R CNN
+F 1 "D_Schottky" V 8795 3572 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8750 3650 50  0001 C CNN
+F 3 "~" H 8750 3650 50  0001 C CNN
+	1    8750 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 3500 8950 3500
+Connection ~ 8950 3500
+Wire Wire Line
+	8950 3500 8950 3400
+Wire Wire Line
+	8750 3800 8950 3800
+Connection ~ 8950 3800
+Wire Wire Line
+	8950 3800 8950 3700
+Wire Wire Line
+	7650 4500 7650 4300
+Wire Wire Line
+	7250 4500 7250 4400
+Wire Wire Line
+	7250 4200 7250 4100
+Wire Wire Line
+	7250 4100 7350 4100
+Wire Wire Line
+	7250 4100 6950 4100
+Connection ~ 7250 4100
+$Comp
+L ma4evse:AO3402 Q1
+U 1 1 5E3DA2EB
+P 7550 4100
+AR Path="/5E3DA2EB" Ref="Q1"  Part="1" 
+AR Path="/5E295EB5/5E3DA2EB" Ref="Q?"  Part="1" 
+AR Path="/5E2A129E/5E3DA2EB" Ref="Q?"  Part="1" 
+AR Path="/5E2A9DD8/5E3DA2EB" Ref="Q?"  Part="1" 
+F 0 "Q1" H 7756 4146 50  0000 L CNN
+F 1 "AO3402" H 7756 4055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7750 4200 50  0001 C CNN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3402.pdf" H 7550 4100 50  0001 C CNN
+	1    7550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR045
+U 1 1 5E3DA2F1
+P 7650 4500
+AR Path="/5E3DA2F1" Ref="#PWR045"  Part="1" 
+AR Path="/5E295EB5/5E3DA2F1" Ref="#PWR?"  Part="1" 
+AR Path="/5E2A129E/5E3DA2F1" Ref="#PWR?"  Part="1" 
+AR Path="/5E2A9DD8/5E3DA2F1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR045" H 7650 4250 50  0001 C CNN
+F 1 "GND" H 7655 4327 50  0000 C CNN
+F 2 "" H 7650 4500 50  0001 C CNN
+F 3 "" H 7650 4500 50  0001 C CNN
+	1    7650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 5E3DA2F7
+P 7250 4300
+AR Path="/5E3DA2F7" Ref="R8"  Part="1" 
+AR Path="/5E295EB5/5E3DA2F7" Ref="R?"  Part="1" 
+AR Path="/5E2A129E/5E3DA2F7" Ref="R?"  Part="1" 
+AR Path="/5E2A9DD8/5E3DA2F7" Ref="R?"  Part="1" 
+F 0 "R8" H 7191 4254 50  0000 R CNN
+F 1 "10k" H 7191 4345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7250 4300 50  0001 C CNN
+F 3 "~" H 7250 4300 50  0001 C CNN
+	1    7250 4300
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR044
+U 1 1 5E3DA2FD
+P 7250 4500
+AR Path="/5E3DA2FD" Ref="#PWR044"  Part="1" 
+AR Path="/5E295EB5/5E3DA2FD" Ref="#PWR?"  Part="1" 
+AR Path="/5E2A129E/5E3DA2FD" Ref="#PWR?"  Part="1" 
+AR Path="/5E2A9DD8/5E3DA2FD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR044" H 7250 4250 50  0001 C CNN
+F 1 "GND" H 7255 4327 50  0000 C CNN
+F 2 "" H 7250 4500 50  0001 C CNN
+F 3 "" H 7250 4500 50  0001 C CNN
+	1    7250 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 5E3DA303
+P 7950 3600
+F 0 "J9" H 7900 3700 50  0000 L CNN
+F 1 "Conn_01x02" H 7700 3800 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 7950 3600 50  0001 C CNN
+F 3 "~" H 7950 3600 50  0001 C CNN
+	1    7950 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3600 7650 3600
+Wire Wire Line
+	7650 3600 7650 3500
+$Comp
+L power:+12V #PWR040
+U 1 1 5E3DA30B
+P 7650 3400
+F 0 "#PWR040" H 7650 3250 50  0001 C CNN
+F 1 "+12V" H 7665 3573 50  0000 C CNN
+F 2 "" H 7650 3400 50  0001 C CNN
+F 3 "" H 7650 3400 50  0001 C CNN
+	1    7650 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 3700 7750 3700
+Wire Wire Line
+	7650 3900 7650 3800
+$Comp
+L Device:D_Schottky D7
+U 1 1 5E3DA313
+P 7450 3650
+AR Path="/5E3DA313" Ref="D7"  Part="1" 
+AR Path="/5E295EB5/5E3DA313" Ref="D?"  Part="1" 
+AR Path="/5E2A129E/5E3DA313" Ref="D?"  Part="1" 
+AR Path="/5E2A9DD8/5E3DA313" Ref="D?"  Part="1" 
+F 0 "D7" V 7404 3572 50  0000 R CNN
+F 1 "D_Schottky" V 7495 3572 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7450 3650 50  0001 C CNN
+F 3 "~" H 7450 3650 50  0001 C CNN
+	1    7450 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 3500 7650 3500
+Connection ~ 7650 3500
+Wire Wire Line
+	7650 3500 7650 3400
+Wire Wire Line
+	7450 3800 7650 3800
+Connection ~ 7650 3800
+Wire Wire Line
+	7650 3800 7650 3700
+Wire Wire Line
+	7050 5100 7050 4800
+Wire Wire Line
+	7050 4800 8250 4800
+Wire Wire Line
+	8250 4800 8250 4100
+Wire Wire Line
+	5750 5100 7050 5100
+Wire Wire Line
+	6950 5000 6950 4100
+Wire Wire Line
+	5750 5000 6950 5000
+Wire Notes Line
+	7150 6300 7150 4900
+Wire Notes Line
+	6850 3150 6850 4900
+Wire Notes Line
+	6850 4900 11200 4900
+Text Notes 8750 2950 0    50   ~ 0
+Relay Control circuitry
 $EndSCHEMATC
