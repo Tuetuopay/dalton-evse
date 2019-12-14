@@ -77,6 +77,12 @@ K darlington optocoupler
 F http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf
 $ENDCMP
 #
+$CMP JS202011CQN
+D Switch, double dual pole double throw
+K switch single-pole double-throw spdt ON-ON
+F ~
+$ENDCMP
+#
 $CMP MCP23S08-SO
 D 8-Bit I/O Expander with Serial Interface
 K gpio, expander, spi
@@ -97,10 +103,16 @@ $CMP RCMB121
 F http://www.promac.com.pl/wp-content/uploads/2016/10/RCMB121_D00267_D_XXEN.pdf
 $ENDCMP
 #
+$CMP S1A-13-F
+D 50V 1A General Purpose Rectifier Diode, SMB
+K diode
+F https://www.diodes.com/assets/Datasheets/ds16003.pdf
+$ENDCMP
+#
 $CMP SW_DPDT_x2
 D Switch, double dual pole double throw
 K switch single-pole double-throw spdt ON-ON
-F ~
+F https://www.mouser.fr/datasheet/2/60/js-1382693.pdf
 $ENDCMP
 #
 $CMP TC7660SxO

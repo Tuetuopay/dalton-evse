@@ -103,6 +103,12 @@ $CMP RCMB121
 F http://www.promac.com.pl/wp-content/uploads/2016/10/RCMB121_D00267_D_XXEN.pdf
 $ENDCMP
 #
+$CMP S1A-13-F
+D 50V 1A General Purpose Rectifier Diode, SMB
+K diode
+F https://www.diodes.com/assets/Datasheets/ds16003.pdf
+$ENDCMP
+#
 $CMP SW_DPDT_x2
 D Switch, double dual pole double throw
 K switch single-pole double-throw spdt ON-ON
