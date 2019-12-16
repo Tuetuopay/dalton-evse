@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 3
+Sheet 3 3
 Title "Joe 4 EVSE"
 Date "2019-12-10"
 Rev "v1.0"
@@ -245,12 +245,9 @@ Wire Wire Line
 Wire Wire Line
 	5600 4350 5500 4350
 Wire Wire Line
-	5500 4350 5500 4550
+	5500 4350 5500 4450
 Wire Wire Line
 	5600 4550 5500 4550
-Connection ~ 5500 4550
-Wire Wire Line
-	5500 4550 5500 4850
 $Comp
 L Device:R_Small R16
 U 1 1 5DF589D7
@@ -285,17 +282,6 @@ Wire Wire Line
 	3900 4150 4500 4150
 Wire Wire Line
 	3900 4750 4500 4750
-$Comp
-L power:GND #PWR066
-U 1 1 5DF5D9A3
-P 5500 4850
-F 0 "#PWR066" H 5500 4600 50  0001 C CNN
-F 1 "GND" H 5505 4677 50  0000 C CNN
-F 2 "" H 5500 4850 50  0001 C CNN
-F 3 "" H 5500 4850 50  0001 C CNN
-	1    5500 4850
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR067
 U 1 1 5DF5E25F
@@ -596,19 +582,19 @@ Text Label 2200 2050 2    50   ~ 0
 PILOT
 Text Label 2200 4350 2    50   ~ 0
 AC_TEST_IN0
-Text Label 2200 4450 2    50   ~ 0
+Text Label 2200 4550 2    50   ~ 0
 AC_TEST_IN1
 Wire Wire Line
 	2200 4350 1600 4350
 Wire Wire Line
-	2200 4450 1600 4450
-Wire Wire Line
-	1600 4550 2200 4550
+	2200 4550 1600 4550
 Wire Wire Line
 	1600 4650 2200 4650
-Text Label 2200 4550 2    50   ~ 0
-AC_TEST0
+Wire Wire Line
+	1600 4750 2200 4750
 Text Label 2200 4650 2    50   ~ 0
+AC_TEST0
+Text Label 2200 4750 2    50   ~ 0
 AC_TEST1
 Wire Wire Line
 	1750 6450 2350 6450
@@ -626,11 +612,11 @@ Text HLabel 1600 2050 0    50   Output ~ 0
 PILOT
 Text HLabel 1600 4350 0    50   Input ~ 0
 AC_TEST_IN0
-Text HLabel 1600 4450 0    50   Input ~ 0
+Text HLabel 1600 4550 0    50   Input ~ 0
 AC_TEST_IN1
-Text HLabel 1600 4550 0    50   Output ~ 0
-AC_TEST0
 Text HLabel 1600 4650 0    50   Output ~ 0
+AC_TEST0
+Text HLabel 1600 4750 0    50   Output ~ 0
 AC_TEST1
 Text HLabel 1750 6450 0    50   Input ~ 0
 PP
@@ -727,4 +713,17 @@ Wire Wire Line
 	4800 4750 4700 4750
 Text Notes 3750 5250 0    50   ~ 0
 Two resistors are put in series to get a\nhigh voltage rating, as this is 230VAC.\nUse at least 1206 package, as it usually\ncan handle at least 300V.
+Wire Wire Line
+	5500 4450 3900 4450
+Connection ~ 5500 4450
+Wire Wire Line
+	5500 4450 5500 4550
+Text Label 3900 4450 0    50   ~ 0
+AC_TEST_N
+Wire Wire Line
+	1600 4450 2200 4450
+Text Label 2200 4450 2    50   ~ 0
+AC_TEST_N
+Text HLabel 1600 4450 0    50   Input ~ 0
+AC_TEST_N
 $EndSCHEMATC
