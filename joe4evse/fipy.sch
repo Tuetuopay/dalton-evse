@@ -255,11 +255,9 @@ NoConn ~ 4200 2350
 NoConn ~ 4200 2450
 Wire Wire Line
 	9000 2750 9750 2750
-Wire Wire Line
-	9000 2850 9750 2850
 Text Label 9750 2750 2    50   ~ 0
 AC_TEST0
-Text Label 9750 2850 2    50   ~ 0
+Text Label 10600 2650 2    50   ~ 0
 AC_TEST1
 Wire Wire Line
 	9000 2650 9750 2650
@@ -690,4 +688,39 @@ Wire Wire Line
 	7350 5550 7350 5650
 Wire Wire Line
 	7350 5950 7350 6050
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5E5BD67B
+P 10150 2850
+F 0 "J?" H 10230 2892 50  0000 L CNN
+F 1 "Conn_01x03" H 10230 2801 50  0000 L CNN
+F 2 "" H 10150 2850 50  0001 C CNN
+F 3 "~" H 10150 2850 50  0001 C CNN
+	1    10150 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 2850 9950 2850
+Wire Wire Line
+	9950 2750 9850 2750
+Wire Wire Line
+	9850 2750 9850 2650
+Wire Wire Line
+	9950 2950 9850 2950
+Wire Wire Line
+	9850 2950 9850 3050
+Wire Wire Line
+	9850 2650 10600 2650
+Wire Wire Line
+	9850 3050 10600 3050
+Text Label 10600 3050 2    50   ~ 0
+ERROUT
+Wire Wire Line
+	2000 7150 2750 7150
+Text Label 2750 7150 2    50   ~ 0
+ERROUT
+Text HLabel 2000 7150 0    50   Output ~ 0
+ERROUT
+Text Notes 2850 7150 0    50   ~ 0
+AC power stuck error signal
 $EndSCHEMATC
