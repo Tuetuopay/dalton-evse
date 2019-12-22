@@ -1484,4 +1484,82 @@ Wire Wire Line
 	5450 6600 5450 6900
 Wire Wire Line
 	5450 7100 5450 7400
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J12
+U 1 1 5DFFDDFE
+P 5050 3650
+F 0 "J12" H 5100 4067 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 5100 3976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 5050 3650 50  0001 C CNN
+F 3 "~" H 5050 3650 50  0001 C CNN
+	1    5050 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3750 4350 3750
+Wire Wire Line
+	5350 3550 5850 3550
+Wire Wire Line
+	4850 3550 4350 3550
+Wire Wire Line
+	5350 3650 5850 3650
+Wire Wire Line
+	4850 3650 4350 3650
+Wire Wire Line
+	5350 3450 5850 3450
+Wire Wire Line
+	4850 3450 4350 3450
+Text Label 4350 3450 0    50   ~ 0
+SCLK
+Text Label 5850 3450 2    50   ~ 0
+MISO
+Text Label 4350 3650 0    50   ~ 0
+MOSI
+Text Label 5850 3650 2    50   ~ 0
+NFC_~CS
+Text Label 4350 3550 0    50   ~ 0
+LED_~CS
+Text Label 5850 3550 2    50   ~ 0
+NFC_~RST
+Text Label 4350 3750 0    50   ~ 0
+NFC_IRQ
+Text Label 5850 3750 2    50   ~ 0
+TOUCH
+Wire Wire Line
+	5350 3750 5850 3750
+Text Label 6500 6000 2    50   ~ 0
+RCMB_AC_30
+Text Label 6500 5900 2    50   ~ 0
+RCMB_DC_6
+Wire Wire Line
+	4850 3850 4350 3850
+Wire Wire Line
+	5350 3850 5850 3850
+Text Label 4350 3850 0    50   ~ 0
+RCMB_AC_30
+Text Label 5850 3850 2    50   ~ 0
+RCMB_DC_6
+Text Label 5850 3950 2    50   ~ 0
+RELAY_RCMB
+Wire Wire Line
+	5850 3950 5350 3950
+$Comp
+L power:GND #PWR075
+U 1 1 5E0BB16B
+P 4750 4050
+AR Path="/5E0BB16B" Ref="#PWR075"  Part="1" 
+AR Path="/5E295EB5/5E0BB16B" Ref="#PWR?"  Part="1" 
+AR Path="/5E2A129E/5E0BB16B" Ref="#PWR?"  Part="1" 
+AR Path="/5E2A9DD8/5E0BB16B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR075" H 4750 3800 50  0001 C CNN
+F 1 "GND" H 4755 3877 50  0000 C CNN
+F 2 "" H 4750 4050 50  0001 C CNN
+F 3 "" H 4750 4050 50  0001 C CNN
+	1    4750 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4050 4750 3950
+Wire Wire Line
+	4750 3950 4850 3950
 $EndSCHEMATC

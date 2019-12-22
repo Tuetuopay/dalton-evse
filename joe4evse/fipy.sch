@@ -689,12 +689,12 @@ Wire Wire Line
 Wire Wire Line
 	7350 5950 7350 6050
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J13
 U 1 1 5E5BD67B
 P 10150 2850
-F 0 "J?" H 10230 2892 50  0000 L CNN
+F 0 "J13" H 10230 2892 50  0000 L CNN
 F 1 "Conn_01x03" H 10230 2801 50  0000 L CNN
-F 2 "" H 10150 2850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10150 2850 50  0001 C CNN
 F 3 "~" H 10150 2850 50  0001 C CNN
 	1    10150 2850
 	1    0    0    -1  
