@@ -467,7 +467,7 @@ F4 "SCLK" O L 4500 4900 50
 F5 "MOSI" O L 4500 5000 50 
 F6 "MISO" I L 4500 5100 50 
 F7 "NFC_~CS" O L 4500 5200 50 
-F8 "LED_~CS" O L 4500 5300 50 
+F8 "LED_LAT" O L 4500 5300 50 
 F9 "DEV_~RST" O L 4500 5500 50 
 F10 "NFC_IRQ" I L 4500 5600 50 
 F11 "MOD_EN" O L 4500 5700 50 
@@ -825,7 +825,7 @@ MOSI
 Text Label 2150 5500 2    50   ~ 0
 NFC_~CS
 Text Label 2150 5600 2    50   ~ 0
-LED_~CS
+LED_LAT
 Text Label 2150 5800 2    50   ~ 0
 NFC_~RSTO
 Text Label 2150 5900 2    50   ~ 0
@@ -860,7 +860,7 @@ MOSI
 Text Label 4000 5200 0    50   ~ 0
 NFC_~CS
 Text Label 4000 5300 0    50   ~ 0
-LED_~CS
+LED_LAT
 Text Label 4000 5500 0    50   ~ 0
 NFC_~RST
 Text Label 4000 5600 0    50   ~ 0
@@ -1532,7 +1532,7 @@ NFC_IRQ
 Text Label 5850 3550 2    50   ~ 0
 NFC_~RST
 Text Label 4350 3550 0    50   ~ 0
-LED_~CS
+LED_LAT
 Text Label 5850 3650 2    50   ~ 0
 NFC_~CS
 Text Label 4350 3650 0    50   ~ 0

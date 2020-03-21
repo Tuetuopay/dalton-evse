@@ -135,7 +135,7 @@ Wire Wire Line
 Text Label 6450 2250 2    50   ~ 0
 NFC_~CS
 Text Label 6450 2350 2    50   ~ 0
-LED_~CS
+LED_LAT
 Text Label 6450 2650 2    50   ~ 0
 SCLK
 Text Label 6450 2050 2    50   ~ 0
@@ -302,7 +302,7 @@ Wire Wire Line
 Text Label 2750 4950 2    50   ~ 0
 NFC_~CS
 Text Label 2750 5050 2    50   ~ 0
-LED_~CS
+LED_LAT
 Text Label 2750 4650 2    50   ~ 0
 SCLK
 Text Label 2750 4450 2    50   ~ 0
@@ -352,7 +352,7 @@ MISO
 Text HLabel 2000 4950 0    50   Output ~ 0
 NFC_~CS
 Text HLabel 2000 5050 0    50   Output ~ 0
-LED_~CS
+LED_LAT
 Text HLabel 2000 5250 0    50   Output ~ 0
 DEV_~RST
 Text HLabel 2000 5350 0    50   Input ~ 0
