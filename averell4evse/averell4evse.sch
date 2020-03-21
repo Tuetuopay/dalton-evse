@@ -507,8 +507,6 @@ Wire Wire Line
 	3800 2900 3800 3000
 Text Label 4500 3650 0    50   ~ 0
 GCLK
-Text Label 2850 3950 0    50   ~ 0
-SCK
 Wire Wire Line
 	4900 4050 4500 4050
 Text Label 4500 4050 0    50   ~ 0
@@ -634,22 +632,14 @@ Wire Wire Line
 	8750 4600 8350 4600
 Text Label 8350 4600 0    50   ~ 0
 NFC_CS
-Text Label 4500 4250 0    50   ~ 0
-LED_MISO
 Text Notes 3250 1750 0    50   ~ 0
-Any reference in the tens of MHz\nbut lower than 33MHz\n(e.g. KT2520K26000DCW28QAS)
-Wire Wire Line
-	4100 4250 4900 4250
+Any reference in the tens of MHz\nbut lower than 33MHz\n(e.g.  ECS-2520MV-120-BN-TR)
 Wire Wire Line
 	4200 2600 4400 2600
 Wire Wire Line
 	4400 2600 4400 3650
 Wire Wire Line
 	4400 3650 4900 3650
-Wire Wire Line
-	2850 4250 3550 4250
-Text Label 2850 4250 0    50   ~ 0
-MISO
 Wire Wire Line
 	10050 5200 10900 5200
 Text Label 10900 5200 2    50   ~ 0
@@ -805,8 +795,6 @@ Text Notes 9050 2050 0    50   ~ 0
 To IEC plug LEDs
 Text Notes 9050 3250 0    50   ~ 0
 To logo LEDs
-Text Notes 3300 5200 0    50   ~ 0
-The LED driver has no chip select pin,\nthus its SOUT pin never goes high-Z.\nFor a shared MISO, inactive devices must\nput their MISO pin in high-Z, which we\nsimulate here with the buffer chip.\nThe gate is used to gate MISO and SCK\ndepending on the CS.
 Wire Wire Line
 	10050 4300 10450 4300
 $Comp
@@ -1068,147 +1056,10 @@ Text Label 10100 5000 0    50   ~ 0
 SIGOUT
 Text Label 10100 5100 0    50   ~ 0
 SIGIN
-$Comp
-L 74xGxx:74AUC2G125 U4
-U 1 1 5DE55BF0
-P 3400 3950
-F 0 "U4" H 3300 4500 50  0000 C CNN
-F 1 "74AUC2G125" H 3300 4400 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 3400 3950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 3400 3950 50  0001 C CNN
-	1    3400 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xGxx:74AUC2G125 U4
-U 2 1 5DE573F2
-P 3800 4250
-F 0 "U4" H 3775 4075 50  0000 C CNN
-F 1 "74AUC2G125" H 3775 3984 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 3800 4250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 3800 4250 50  0001 C CNN
-	2    3800 4250
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	3650 3950 4200 3950
-Wire Wire Line
-	3100 3950 2850 3950
-Wire Wire Line
-	3800 3850 4900 3850
-Connection ~ 3800 3850
-Wire Wire Line
-	3800 3850 3800 4050
-Wire Wire Line
-	3400 3750 3400 3650
-Wire Wire Line
-	3400 3650 3800 3650
-Wire Wire Line
-	3800 3650 3800 3850
-Wire Wire Line
-	3400 3650 2850 3650
-Connection ~ 3400 3650
-Text Label 2850 3650 0    50   ~ 0
-DRV_CS
-$Comp
-L power:GND #PWR0111
-U 1 1 5DF09DDB
-P 3450 4400
-F 0 "#PWR0111" H 3450 4150 50  0001 C CNN
-F 1 "GND" H 3455 4227 50  0000 C CNN
-F 2 "" H 3450 4400 50  0001 C CNN
-F 3 "" H 3450 4400 50  0001 C CNN
-	1    3450 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 4000 3450 4350
-Wire Wire Line
-	3450 4350 3750 4350
-Wire Wire Line
-	3750 4350 3750 4300
-Wire Wire Line
-	3450 4350 3450 4400
-Connection ~ 3450 4350
-Wire Wire Line
-	3750 4200 3750 3850
-Wire Wire Line
-	3750 3850 3650 3850
-Wire Wire Line
-	3450 3850 3450 3900
-$Comp
-L power:+3V3 #PWR0112
-U 1 1 5DF6CFFF
-P 3650 3550
-F 0 "#PWR0112" H 3650 3400 50  0001 C CNN
-F 1 "+3V3" H 3665 3723 50  0000 C CNN
-F 2 "" H 3650 3550 50  0001 C CNN
-F 3 "" H 3650 3550 50  0001 C CNN
-	1    3650 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 3850 3650 3550
-Connection ~ 3650 3850
-Wire Wire Line
-	3650 3850 3450 3850
-$Comp
-L Device:R_Small R2
-U 1 1 5DF98E8B
-P 4200 3700
-F 0 "R2" H 4142 3746 50  0000 R CNN
-F 1 "10k" H 4142 3655 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4200 3700 50  0001 C CNN
-F 3 "~" H 4200 3700 50  0001 C CNN
-	1    4200 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5DF99D5D
-P 4200 4100
-F 0 "R3" H 4142 4146 50  0000 R CNN
-F 1 "10k" H 4142 4055 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4200 4100 50  0001 C CNN
-F 3 "~" H 4200 4100 50  0001 C CNN
-	1    4200 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR010
-U 1 1 5DFA597D
-P 4200 4400
-F 0 "#PWR010" H 4200 4150 50  0001 C CNN
-F 1 "GND" H 4205 4227 50  0000 C CNN
-F 2 "" H 4200 4400 50  0001 C CNN
-F 3 "" H 4200 4400 50  0001 C CNN
-	1    4200 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR09
-U 1 1 5DFA60A3
-P 4200 3550
-F 0 "#PWR09" H 4200 3400 50  0001 C CNN
-F 1 "+3V3" H 4215 3723 50  0000 C CNN
-F 2 "" H 4200 3550 50  0001 C CNN
-F 3 "" H 4200 3550 50  0001 C CNN
-	1    4200 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 3550 4200 3600
-Wire Wire Line
-	4200 3800 4200 3950
-Connection ~ 4200 3950
-Wire Wire Line
-	4200 3950 4900 3950
-Wire Wire Line
-	4200 3950 4200 4000
-Wire Wire Line
-	4200 4200 4200 4400
+	4500 3850 4900 3850
 Text Label 4500 3950 0    50   ~ 0
-DRV_SCK
+SCK
 Text Label 2100 2800 2    50   ~ 0
 SCK
 Text Label 2100 3200 2    50   ~ 0
@@ -1218,7 +1069,7 @@ MISO
 Text Label 2100 3400 2    50   ~ 0
 NFC_CS
 Text Label 2100 3500 2    50   ~ 0
-DRV_CS
+DRV_LAT
 $Comp
 L power:GND #PWR013
 U 1 1 5E0E57F4
@@ -1366,16 +1217,21 @@ $EndComp
 Wire Wire Line
 	6350 5450 6350 5550
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0111
 U 1 1 5E72790F
 P 6350 5450
-F 0 "#PWR?" H 6350 5300 50  0001 C CNN
+F 0 "#PWR0111" H 6350 5300 50  0001 C CNN
 F 1 "+5V" H 6365 5623 50  0000 C CNN
 F 2 "" H 6350 5450 50  0001 C CNN
 F 3 "" H 6350 5450 50  0001 C CNN
 	1    6350 5450
 	1    0    0    -1  
 $EndComp
+Text Label 4500 3850 0    50   ~ 0
+DRV_LAT
+NoConn ~ 4900 4250
+Wire Wire Line
+	4500 3950 4900 3950
 Wire Bus Line
 	8250 1050 8250 3450
 Wire Bus Line
