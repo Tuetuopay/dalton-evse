@@ -398,17 +398,6 @@ PP
 Text Label 5850 6500 2    50   ~ 0
 PP_READ
 $Comp
-L ma4evse:TC7660SxO U5
-U 1 1 5DF73610
-P 3750 1950
-F 0 "U5" H 3400 2550 50  0000 C CNN
-F 1 "TC7660SxO" H 3400 2450 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3850 1850 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21468B.pdf" H 3850 1850 50  0001 C CNN
-	1    3750 1950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR063
 U 1 1 5DF8BE15
 P 3750 2650
@@ -489,8 +478,7 @@ Wire Wire Line
 NoConn ~ 3350 1950
 NoConn ~ 3350 2150
 Wire Wire Line
-	3750 1350 3750 1450
-NoConn ~ 3350 1650
+	3750 1350 3750 1400
 Wire Wire Line
 	4150 2250 4250 2250
 Wire Wire Line
@@ -640,16 +628,16 @@ $EndComp
 $Comp
 L power:+12V #PWR050
 U 1 1 5E20B3B1
-P 3100 1400
-F 0 "#PWR050" H 3100 1250 50  0001 C CNN
-F 1 "+12V" H 3115 1573 50  0000 C CNN
-F 2 "" H 3100 1400 50  0001 C CNN
-F 3 "" H 3100 1400 50  0001 C CNN
-	1    3100 1400
+P 3100 1350
+F 0 "#PWR050" H 3100 1200 50  0001 C CNN
+F 1 "+12V" H 3115 1523 50  0000 C CNN
+F 2 "" H 3100 1350 50  0001 C CNN
+F 3 "" H 3100 1350 50  0001 C CNN
+	1    3100 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 1400 3100 1950
+	3100 1350 3100 1950
 $Comp
 L power:GND #PWR062
 U 1 1 5E20D46A
@@ -726,4 +714,24 @@ Text Label 2200 4450 2    50   ~ 0
 AC_TEST_N
 Text HLabel 1600 4450 0    50   Input ~ 0
 AC_TEST_N
+$Comp
+L ma4evse:TC7660SxO U5
+U 1 1 5DF73610
+P 3750 1950
+F 0 "U5" H 4050 2550 50  0000 C CNN
+F 1 "TC7660SxO" H 4050 2450 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3850 1850 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21468B.pdf" H 3850 1850 50  0001 C CNN
+	1    3750 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1650 3250 1650
+Wire Wire Line
+	3250 1650 3250 1400
+Wire Wire Line
+	3250 1400 3750 1400
+Connection ~ 3750 1400
+Wire Wire Line
+	3750 1400 3750 1450
 $EndSCHEMATC
