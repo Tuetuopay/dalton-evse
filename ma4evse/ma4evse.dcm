@@ -83,6 +83,11 @@ K switch single-pole double-throw spdt ON-ON
 F ~
 $ENDCMP
 #
+$CMP LoPy
+D PyCom Wifi, BLE, LoRA, SigFox devkit
+F https://docs.pycom.io/gitbook/assets/specsheets/Pycom_002_Specsheets_FiPy_v2.pdf
+$ENDCMP
+#
 $CMP MCP23S08-SO
 D 8-Bit I/O Expander with Serial Interface
 K gpio, expander, spi
