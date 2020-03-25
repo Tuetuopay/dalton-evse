@@ -1,4 +1,4 @@
-(module fipy (layer F.Cu) (tedit 5D2D16D6)
+(module fipy (layer F.Cu) (tedit 5E7B2B58)
   (fp_text reference REF** (at 0 -11) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -121,4 +121,19 @@
   (pad 26 thru_hole circle (at -11.43 -8.89 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
   (pad 27 thru_hole circle (at -13.97 -8.89 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
   (pad 28 thru_hole circle (at -16.51 -8.89 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
+  (model "${KIPRJMOD}/../ma4evse/3d/LoPy v1.stp"
+    (offset (xyz 0.88 0 9.800000000000001))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 180))
+  )
+  (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x14_P2.54mm_Vertical.step
+    (offset (xyz 16.5 -8.9 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
+  (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x14_P2.54mm_Vertical.step
+    (offset (xyz 16.5 8.9 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
 )
