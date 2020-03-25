@@ -220,12 +220,10 @@ Text Label 7150 2850 2    50   ~ 0
 CT0
 Wire Wire Line
 	6600 3050 7150 3050
-Text Label 7150 3050 2    50   ~ 0
+Text Label 7150 2950 2    50   ~ 0
 CT1
 Wire Wire Line
 	6600 3250 7150 3250
-Text Label 7150 3250 2    50   ~ 0
-CT2
 Wire Wire Line
 	3000 3300 3550 3300
 Wire Wire Line
@@ -924,136 +922,37 @@ Wire Wire Line
 Wire Wire Line
 	8700 5500 8600 5500
 Connection ~ 8600 5500
-$Comp
-L Connector:AudioJack3_SwitchTR J5
-U 1 1 5E9D1787
-P 2250 3500
-F 0 "J5" H 2232 3825 50  0000 C CNN
-F 1 "AudioJack3_SwitchTR" H 2232 3734 50  0000 C CNN
-F 2 "ma4evse:PJ-307C" H 2250 3500 50  0001 C CNN
-F 3 "~" H 2250 3500 50  0001 C CNN
-	1    2250 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 3400 2800 3400
-Wire Wire Line
-	2800 3400 2800 3300
-Wire Wire Line
-	2800 3300 3000 3300
-Connection ~ 3000 3300
-NoConn ~ 2450 3800
 Wire Wire Line
 	2450 3500 2800 3500
 Wire Wire Line
-	2450 3600 2550 3600
+	2800 3500 2800 3300
 Wire Wire Line
-	2550 3600 2550 4100
-$Comp
-L power:GND #PWR025
-U 1 1 5EA13FF6
-P 2550 4100
-F 0 "#PWR025" H 2550 3850 50  0001 C CNN
-F 1 "GND" H 2555 3927 50  0000 C CNN
-F 2 "" H 2550 4100 50  0001 C CNN
-F 3 "" H 2550 4100 50  0001 C CNN
-	1    2550 4100
-	1    0    0    -1  
-$EndComp
-Text Label 2800 3500 2    50   ~ 0
-CT0_DET
+	2800 3300 3000 3300
+Connection ~ 3000 3300
 Wire Wire Line
 	2450 5050 3000 5050
-$Comp
-L Connector:AudioJack3_SwitchTR J6
-U 1 1 5EA247DE
-P 2250 4850
-F 0 "J6" H 2232 5175 50  0000 C CNN
-F 1 "AudioJack3_SwitchTR" H 2232 5084 50  0000 C CNN
-F 2 "ma4evse:PJ-307C" H 2250 4850 50  0001 C CNN
-F 3 "~" H 2250 4850 50  0001 C CNN
-	1    2250 4850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 4750 2800 4750
-Wire Wire Line
-	2800 4750 2800 4650
-Wire Wire Line
-	2800 4650 3000 4650
-NoConn ~ 2450 5150
 Wire Wire Line
 	2450 4850 2800 4850
 Wire Wire Line
-	2450 4950 2550 4950
+	2800 4850 2800 4650
 Wire Wire Line
-	2550 4950 2550 5450
-$Comp
-L power:GND #PWR026
-U 1 1 5EA247EB
-P 2550 5450
-F 0 "#PWR026" H 2550 5200 50  0001 C CNN
-F 1 "GND" H 2555 5277 50  0000 C CNN
-F 2 "" H 2550 5450 50  0001 C CNN
-F 3 "" H 2550 5450 50  0001 C CNN
-	1    2550 5450
-	1    0    0    -1  
-$EndComp
-Text Label 2800 4850 2    50   ~ 0
-CT1_DET
+	2800 4650 3000 4650
 Connection ~ 3000 4650
-Text Label 2800 6200 2    50   ~ 0
-CT2_DET
-$Comp
-L power:GND #PWR027
-U 1 1 5EA2AB06
-P 2550 6800
-F 0 "#PWR027" H 2550 6550 50  0001 C CNN
-F 1 "GND" H 2555 6627 50  0000 C CNN
-F 2 "" H 2550 6800 50  0001 C CNN
-F 3 "" H 2550 6800 50  0001 C CNN
-	1    2550 6800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 6300 2550 6800
-Wire Wire Line
-	2450 6300 2550 6300
-Wire Wire Line
-	2450 6200 2800 6200
-NoConn ~ 2450 6500
 Wire Wire Line
 	2800 6000 3000 6000
 Wire Wire Line
-	2800 6100 2800 6000
+	2800 6200 2800 6000
 Wire Wire Line
-	2450 6100 2800 6100
-$Comp
-L Connector:AudioJack3_SwitchTR J8
-U 1 1 5EA2AAF9
-P 2250 6200
-F 0 "J8" H 2232 6525 50  0000 C CNN
-F 1 "AudioJack3_SwitchTR" H 2232 6434 50  0000 C CNN
-F 2 "ma4evse:PJ-307C" H 2250 6200 50  0001 C CNN
-F 3 "~" H 2250 6200 50  0001 C CNN
-	1    2250 6200
-	1    0    0    -1  
-$EndComp
+	2450 6200 2800 6200
 Wire Wire Line
 	2450 6400 3000 6400
 Connection ~ 3000 6000
 Wire Wire Line
 	6600 2950 7150 2950
-Text Label 7150 2950 2    50   ~ 0
-CT0_DET
 Wire Wire Line
 	6600 3150 7150 3150
-Text Label 7150 3150 2    50   ~ 0
-CT1_DET
 Wire Wire Line
 	6600 3350 7150 3350
-Text Label 7150 3350 2    50   ~ 0
-CT2_DET
 Text Label 10300 2450 2    50   ~ 0
 P23
 Text Label 10300 2550 2    50   ~ 0
@@ -1061,11 +960,9 @@ P22
 Text Label 10300 2650 2    50   ~ 0
 P21
 Text Label 10300 2750 2    50   ~ 0
-CT2_DET
+P20
 Text Label 10300 2850 2    50   ~ 0
-CT1_DET
-Text Label 10300 2950 2    50   ~ 0
-CT0_DET
+P19
 Wire Wire Line
 	9750 2450 10300 2450
 Wire Wire Line
@@ -1139,10 +1036,10 @@ USB_P
 Text Label 5150 5200 0    50   ~ 0
 USB_N
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR025
 U 1 1 5EB19E60
 P 6050 4600
-F 0 "#PWR?" H 6050 4450 50  0001 C CNN
+F 0 "#PWR025" H 6050 4450 50  0001 C CNN
 F 1 "+5V" H 6065 4773 50  0000 C CNN
 F 2 "" H 6050 4600 50  0001 C CNN
 F 3 "" H 6050 4600 50  0001 C CNN
@@ -1152,4 +1049,47 @@ $EndComp
 Wire Wire Line
 	6050 4600 6050 4700
 Connection ~ 6050 4700
+$Comp
+L Connector:AudioJack3 J5
+U 1 1 5EBEA603
+P 2250 3600
+F 0 "J5" H 2232 3925 50  0000 C CNN
+F 1 "AudioJack3" H 2232 3834 50  0000 C CNN
+F 2 "ma4evse:JIS-C-6560" H 2250 3600 50  0001 C CNN
+F 3 "~" H 2250 3600 50  0001 C CNN
+	1    2250 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack3 J6
+U 1 1 5EBF5D81
+P 2250 4950
+F 0 "J6" H 2232 5275 50  0000 C CNN
+F 1 "AudioJack3" H 2232 5184 50  0000 C CNN
+F 2 "ma4evse:JIS-C-6560" H 2250 4950 50  0001 C CNN
+F 3 "~" H 2250 4950 50  0001 C CNN
+	1    2250 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack3 J8
+U 1 1 5EBF64C7
+P 2250 6300
+F 0 "J8" H 2232 6625 50  0000 C CNN
+F 1 "AudioJack3" H 2232 6534 50  0000 C CNN
+F 2 "ma4evse:JIS-C-6560" H 2250 6300 50  0001 C CNN
+F 3 "~" H 2250 6300 50  0001 C CNN
+	1    2250 6300
+	1    0    0    -1  
+$EndComp
+Text Label 10300 2950 2    50   ~ 0
+P18
+Text Label 7150 3050 2    50   ~ 0
+CT2
+Text Label 7150 3150 2    50   ~ 0
+P18
+Text Label 7150 3250 2    50   ~ 0
+P19
+Text Label 7150 3350 2    50   ~ 0
+P20
 $EndSCHEMATC
