@@ -1,0 +1,23 @@
+(module BC-53-6 (layer F.Cu) (tedit 5E7A0106)
+  (attr virtual)
+  (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "BC-53-6 series" (at 0 -0.5) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_line (start -26.8 44.85) (end -26.8 -44.85) (layer F.CrtYd) (width 0.12))
+  (fp_line (start 26.8 44.85) (end -26.8 44.85) (layer F.CrtYd) (width 0.12))
+  (fp_line (start 26.8 -44.85) (end 26.8 44.85) (layer F.CrtYd) (width 0.12))
+  (fp_line (start -26.8 -44.85) (end 26.8 -44.85) (layer F.CrtYd) (width 0.12))
+  (model ${KIPRJMOD}/../ma4evse/3d/pxc_2896403_03_BC-53-6-UT-HBUS-BK_3D.stp
+    (offset (xyz -27 0 -14))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 -90))
+  )
+  (model ${KIPRJMOD}/../ma4evse/3d/pxc_2896416_01_BC-53-6-OT-U11-KMGY_3D.stp
+    (offset (xyz -27 0 -14))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 -90))
+  )
+)
