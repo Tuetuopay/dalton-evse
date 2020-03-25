@@ -1040,6 +1040,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/../ma4evse/3d/HLK-PM0x.step
+      (offset (xyz 14.7 -2.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Connector_USB:USB_Micro-B_Molex_47346-0001 (layer F.Cu) (tedit 5D8620A7) (tstamp 5E77F62C)
