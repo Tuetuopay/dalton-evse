@@ -668,164 +668,75 @@ Text Label 7150 3550 2    50   ~ 0
 P22
 Text Label 7150 3650 2    50   ~ 0
 P23
-$Comp
-L Connector_Generic:Conn_01x12 J3
-U 1 1 5E930FAC
-P 8850 2750
-F 0 "J3" H 8930 2742 50  0000 L CNN
-F 1 "Conn_01x12" H 8930 2651 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 8850 2750 50  0001 C CNN
-F 3 "~" H 8850 2750 50  0001 C CNN
-	1    8850 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x12 J4
-U 1 1 5E93CCE6
-P 9550 2750
-F 0 "J4" H 9650 3500 50  0000 C CNN
-F 1 "Conn_01x12" H 9650 3400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 9550 2750 50  0001 C CNN
-F 3 "~" H 9550 2750 50  0001 C CNN
-	1    9550 2750
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	8650 2450 8100 2450
+	8400 2350 8950 2350
 Wire Wire Line
-	8100 2550 8650 2550
-Wire Wire Line
-	8650 2650 8100 2650
-Wire Wire Line
-	8100 2750 8650 2750
-Wire Wire Line
-	8650 2850 8100 2850
-Text Label 8100 2450 0    50   ~ 0
-P2
-Text Label 8100 2550 0    50   ~ 0
-P3
-Text Label 8100 2650 0    50   ~ 0
-P4
-Text Label 8100 2750 0    50   ~ 0
+	8950 2450 8400 2450
+Text Label 8400 2350 0    50   ~ 0
 P8
-Text Label 8100 2850 0    50   ~ 0
+Text Label 8400 2450 0    50   ~ 0
 P9
 Wire Wire Line
-	8100 2950 8650 2950
-Text Label 8100 2950 0    50   ~ 0
+	8400 2550 8950 2550
+Text Label 8400 2550 0    50   ~ 0
 P10
 Wire Wire Line
-	8650 3050 8100 3050
-Text Label 8100 3050 0    50   ~ 0
+	8950 2650 8400 2650
+Text Label 8400 2650 0    50   ~ 0
 P11
 Wire Wire Line
 	5100 3650 4550 3650
 Text Label 4550 3650 0    50   ~ 0
 P12
-Wire Wire Line
-	8650 3150 8100 3150
-Text Label 8100 3150 0    50   ~ 0
-P12
 $Comp
 L power:GND #PWR011
 U 1 1 5E95D59E
-P 8550 3450
-F 0 "#PWR011" H 8550 3200 50  0001 C CNN
-F 1 "GND" H 8555 3277 50  0000 C CNN
-F 2 "" H 8550 3450 50  0001 C CNN
-F 3 "" H 8550 3450 50  0001 C CNN
-	1    8550 3450
+P 8850 2850
+F 0 "#PWR011" H 8850 2600 50  0001 C CNN
+F 1 "GND" H 8855 2677 50  0000 C CNN
+F 2 "" H 8850 2850 50  0001 C CNN
+F 3 "" H 8850 2850 50  0001 C CNN
+	1    8850 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR012
 U 1 1 5E95E2D9
-P 9850 3450
-F 0 "#PWR012" H 9850 3200 50  0001 C CNN
-F 1 "GND" H 9855 3277 50  0000 C CNN
-F 2 "" H 9850 3450 50  0001 C CNN
-F 3 "" H 9850 3450 50  0001 C CNN
-	1    9850 3450
+P 9550 2850
+F 0 "#PWR012" H 9550 2600 50  0001 C CNN
+F 1 "GND" H 9555 2677 50  0000 C CNN
+F 2 "" H 9550 2850 50  0001 C CNN
+F 3 "" H 9550 2850 50  0001 C CNN
+	1    9550 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8650 3350 8550 3350
+	8950 2750 8850 2750
 Wire Wire Line
-	8550 3350 8550 3450
+	8850 2750 8850 2850
 Wire Wire Line
-	8550 3350 8550 3250
+	9450 2750 9550 2750
 Wire Wire Line
-	8550 3250 8650 3250
-Connection ~ 8550 3350
-Wire Wire Line
-	9750 3250 9850 3250
-Wire Wire Line
-	9850 3250 9850 3350
-Wire Wire Line
-	9750 3350 9850 3350
-Connection ~ 9850 3350
-Wire Wire Line
-	9850 3350 9850 3450
+	9550 2750 9550 2850
 $Comp
 L power:+5V #PWR06
 U 1 1 5E96EFB4
-P 8550 2150
-F 0 "#PWR06" H 8550 2000 50  0001 C CNN
-F 1 "+5V" H 8565 2323 50  0000 C CNN
-F 2 "" H 8550 2150 50  0001 C CNN
-F 3 "" H 8550 2150 50  0001 C CNN
-	1    8550 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR05
-U 1 1 5E96FDD1
-P 8350 2150
-F 0 "#PWR05" H 8350 2000 50  0001 C CNN
-F 1 "+3V3" H 8365 2323 50  0000 C CNN
-F 2 "" H 8350 2150 50  0001 C CNN
-F 3 "" H 8350 2150 50  0001 C CNN
-	1    8350 2150
+P 8850 2150
+F 0 "#PWR06" H 8850 2000 50  0001 C CNN
+F 1 "+5V" H 8865 2323 50  0000 C CNN
+F 2 "" H 8850 2150 50  0001 C CNN
+F 3 "" H 8850 2150 50  0001 C CNN
+	1    8850 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 2150 8550 2250
+	8850 2150 8850 2250
 Wire Wire Line
-	8550 2250 8650 2250
+	8850 2250 8950 2250
 Wire Wire Line
-	8350 2150 8350 2350
+	9550 2150 9550 2250
 Wire Wire Line
-	8350 2350 8650 2350
-$Comp
-L power:+5V #PWR07
-U 1 1 5E97A0D3
-P 9850 2150
-F 0 "#PWR07" H 9850 2000 50  0001 C CNN
-F 1 "+5V" H 9865 2323 50  0000 C CNN
-F 2 "" H 9850 2150 50  0001 C CNN
-F 3 "" H 9850 2150 50  0001 C CNN
-	1    9850 2150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR08
-U 1 1 5E97A0D9
-P 10050 2150
-F 0 "#PWR08" H 10050 2000 50  0001 C CNN
-F 1 "+3V3" H 10065 2323 50  0000 C CNN
-F 2 "" H 10050 2150 50  0001 C CNN
-F 3 "" H 10050 2150 50  0001 C CNN
-	1    10050 2150
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9850 2150 9850 2250
-Wire Wire Line
-	9850 2250 9750 2250
-Wire Wire Line
-	10050 2150 10050 2350
-Wire Wire Line
-	10050 2350 9750 2350
+	9550 2250 9450 2250
 $Comp
 L power:+5V #PWR016
 U 1 1 5E97FE0C
@@ -953,80 +864,22 @@ Wire Wire Line
 	6600 3150 7150 3150
 Wire Wire Line
 	6600 3350 7150 3350
-Text Label 10300 2450 2    50   ~ 0
-P23
-Text Label 10300 2550 2    50   ~ 0
-P22
-Text Label 10300 2650 2    50   ~ 0
+Text Label 10000 2350 2    50   ~ 0
 P21
-Text Label 10300 2750 2    50   ~ 0
+Text Label 10000 2450 2    50   ~ 0
 P20
-Text Label 10300 2850 2    50   ~ 0
+Text Label 10000 2550 2    50   ~ 0
 P19
 Wire Wire Line
-	9750 2450 10300 2450
+	9450 2350 10000 2350
 Wire Wire Line
-	10300 2550 9750 2550
+	10000 2450 9450 2450
 Wire Wire Line
-	9750 2650 10300 2650
-Wire Wire Line
-	10300 2750 9750 2750
-Wire Wire Line
-	9750 2850 10300 2850
-Wire Wire Line
-	10300 2950 9750 2950
-Text Label 10300 3050 2    50   ~ 0
+	9450 2550 10000 2550
+Text Label 10000 2650 2    50   ~ 0
 P14
-Text Label 10300 3150 2    50   ~ 0
-P13
 Wire Wire Line
-	9750 3050 10300 3050
-Wire Wire Line
-	10300 3150 9750 3150
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5EAE7725
-P 10000 4250
-F 0 "H1" H 10100 4296 50  0000 L CNN
-F 1 "MountingHole" H 10100 4205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 10000 4250 50  0001 C CNN
-F 3 "~" H 10000 4250 50  0001 C CNN
-	1    10000 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5EAE8863
-P 10000 4450
-F 0 "H2" H 10100 4496 50  0000 L CNN
-F 1 "MountingHole" H 10100 4405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 10000 4450 50  0001 C CNN
-F 3 "~" H 10000 4450 50  0001 C CNN
-	1    10000 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 5EAE8A94
-P 10000 4650
-F 0 "H3" H 10100 4696 50  0000 L CNN
-F 1 "MountingHole" H 10100 4605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 10000 4650 50  0001 C CNN
-F 3 "~" H 10000 4650 50  0001 C CNN
-	1    10000 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5EAE8D45
-P 10000 4850
-F 0 "H4" H 10100 4896 50  0000 L CNN
-F 1 "MountingHole" H 10100 4805 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 10000 4850 50  0001 C CNN
-F 3 "~" H 10000 4850 50  0001 C CNN
-	1    10000 4850
-	1    0    0    -1  
-$EndComp
+	9450 2650 10000 2650
 Text Label 1800 2200 0    50   ~ 0
 AC_L
 Text Label 1800 2300 0    50   ~ 0
@@ -1082,8 +935,6 @@ F 3 "~" H 2250 6300 50  0001 C CNN
 	1    2250 6300
 	1    0    0    -1  
 $EndComp
-Text Label 10300 2950 2    50   ~ 0
-P18
 Text Label 7150 3050 2    50   ~ 0
 CT2
 Text Label 7150 3150 2    50   ~ 0
@@ -1092,4 +943,28 @@ Text Label 7150 3250 2    50   ~ 0
 P19
 Text Label 7150 3350 2    50   ~ 0
 P20
+Text Notes 2250 6800 2    50   ~ 0
+Farnell ref. 1243242\nLCSC ref. C319114
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J3
+U 1 1 5ECD9496
+P 9150 2450
+F 0 "J3" H 9200 2867 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 9200 2776 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 9150 2450 50  0001 C CNN
+F 3 "~" H 9150 2450 50  0001 C CNN
+	1    9150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR08
+U 1 1 5E97A0D9
+P 9550 2150
+F 0 "#PWR08" H 9550 2000 50  0001 C CNN
+F 1 "+3V3" H 9565 2323 50  0000 C CNN
+F 2 "" H 9550 2150 50  0001 C CNN
+F 3 "" H 9550 2150 50  0001 C CNN
+	1    9550 2150
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
