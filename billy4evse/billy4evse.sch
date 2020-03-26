@@ -509,7 +509,7 @@ Wire Wire Line
 NoConn ~ 5450 5500
 NoConn ~ 5450 5600
 Wire Wire Line
-	2450 3700 3000 3700
+	2450 3700 2550 3700
 Wire Wire Line
 	6600 1750 7150 1750
 Text Label 7150 1750 2    50   ~ 0
@@ -834,16 +834,16 @@ Wire Wire Line
 	8700 5500 8600 5500
 Connection ~ 8600 5500
 Wire Wire Line
-	2450 3500 2800 3500
+	2450 3500 2650 3500
 Wire Wire Line
 	2800 3500 2800 3300
 Wire Wire Line
 	2800 3300 3000 3300
 Connection ~ 3000 3300
 Wire Wire Line
-	2450 5050 3000 5050
+	2450 5050 2550 5050
 Wire Wire Line
-	2450 4850 2800 4850
+	2450 4850 2650 4850
 Wire Wire Line
 	2800 4850 2800 4650
 Wire Wire Line
@@ -854,9 +854,9 @@ Wire Wire Line
 Wire Wire Line
 	2800 6200 2800 6000
 Wire Wire Line
-	2450 6200 2800 6200
+	2450 6200 2650 6200
 Wire Wire Line
-	2450 6400 3000 6400
+	2450 6400 2550 6400
 Connection ~ 3000 6000
 Wire Wire Line
 	6600 2950 7150 2950
@@ -967,4 +967,79 @@ F 3 "" H 9550 2150 50  0001 C CNN
 	1    9550 2150
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5ED81E6E
+P 2150 3100
+F 0 "J4" H 2350 2750 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 2350 2850 50  0000 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_1x02_P3.50mm_Horizontal" H 2150 3100 50  0001 C CNN
+F 3 "~" H 2150 3100 50  0001 C CNN
+	1    2150 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 3100 2550 3100
+Wire Wire Line
+	2550 3100 2550 3700
+Connection ~ 2550 3700
+Wire Wire Line
+	2550 3700 3000 3700
+Wire Wire Line
+	2350 3000 2650 3000
+Wire Wire Line
+	2650 3000 2650 3500
+Connection ~ 2650 3500
+Wire Wire Line
+	2650 3500 2800 3500
+$Comp
+L Connector:Screw_Terminal_01x02 J9
+U 1 1 5ED90B2C
+P 2150 4450
+F 0 "J9" H 2350 4100 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 2350 4200 50  0000 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_1x02_P3.50mm_Horizontal" H 2150 4450 50  0001 C CNN
+F 3 "~" H 2150 4450 50  0001 C CNN
+	1    2150 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 4450 2550 4450
+Wire Wire Line
+	2550 4450 2550 5050
+Wire Wire Line
+	2350 4350 2650 4350
+Wire Wire Line
+	2650 4350 2650 4850
+$Comp
+L Connector:Screw_Terminal_01x02 J10
+U 1 1 5ED9640E
+P 2150 5800
+F 0 "J10" H 2350 5450 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 2350 5550 50  0000 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_1x02_P3.50mm_Horizontal" H 2150 5800 50  0001 C CNN
+F 3 "~" H 2150 5800 50  0001 C CNN
+	1    2150 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 5800 2550 5800
+Wire Wire Line
+	2550 5800 2550 6400
+Wire Wire Line
+	2350 5700 2650 5700
+Wire Wire Line
+	2650 5700 2650 6200
+Connection ~ 2550 5050
+Wire Wire Line
+	2550 5050 3000 5050
+Connection ~ 2650 4850
+Wire Wire Line
+	2650 4850 2800 4850
+Connection ~ 2550 6400
+Wire Wire Line
+	2550 6400 3000 6400
+Connection ~ 2650 6200
+Wire Wire Line
+	2650 6200 2800 6200
 $EndSCHEMATC
