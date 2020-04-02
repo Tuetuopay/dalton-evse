@@ -18,6 +18,11 @@ K transistor NMOS N-MOS N-MOSFET
 F http://www.aosmd.com/pdfs/datasheet/AO3402.pdf
 $ENDCMP
 #
+$CMP AP3015
+D MICRO POWER STEP-UP DC-DC CONVERTER
+F https://www.diodes.com/assets/Datasheets/AP3015_A.pdf
+$ENDCMP
+#
 $CMP Amphenol_RJHSE-538X-02
 D Dual RJ connector, 8P8C (8 positions 8 connected), four LEDs, RJ45, Shielded
 K 8P8C RJ female connector led
