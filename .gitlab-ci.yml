@@ -1,0 +1,29 @@
+include:
+  - project: 'calder/ci-common'
+    ref: 'master'
+    file: '.gitlab-ci_kicad-fabrication-outputs.yml'
+
+bom:
+  image: obra/kicad-tools:latest
+  stage: build
+  extends: .bom
+  only:
+  - tags
+ibom:
+  image: obra/kicad-tools:latest
+  stage: build
+  extends: .ibom
+  only:
+  - tags
+schematic:
+  image: obra/kicad-tools:latest
+  stage: build
+  extends: .schematic
+  only:
+  - tags
+gerbers:
+  image: obra/kicad-tools:latest
+  stage: build
+  extends: .gerbers
+  only:
+  - tags
