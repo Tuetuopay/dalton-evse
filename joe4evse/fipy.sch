@@ -87,10 +87,10 @@ NoConn ~ 4200 2950
 NoConn ~ 4200 2850
 NoConn ~ 4200 2750
 NoConn ~ 4200 2650
-Text Label 6450 2850 2    50   ~ 0
+Text Label 6450 3350 2    50   ~ 0
 NFC_IRQ
 Wire Wire Line
-	5700 2850 6450 2850
+	5700 3350 6450 3350
 Text Label 6450 2950 2    50   ~ 0
 MISO
 Text Label 6450 2750 2    50   ~ 0
@@ -116,15 +116,15 @@ F 3 "https://docs.pycom.io/gitbook/assets/specsheets/Pycom_002_Specsheets_FiPy_v
 $EndComp
 Text Label 6450 3250 2    50   ~ 0
 PILOT_OUT
-Text Label 6450 3350 2    50   ~ 0
+Text Label 6450 2850 2    50   ~ 0
 PILOT_IN
 Wire Wire Line
 	5700 3250 6450 3250
 Wire Wire Line
-	6450 3350 5700 3350
+	6450 2850 5700 2850
 Wire Wire Line
-	5700 3150 6450 3150
-Text Label 6450 3150 2    50   ~ 0
+	5700 3050 6450 3050
+Text Label 6450 3050 2    50   ~ 0
 PP_IN
 Text Label 6450 2150 2    50   ~ 0
 DEV_~RST
@@ -155,7 +155,7 @@ Text Label 9750 2350 2    50   ~ 0
 RELAY_JACK
 Text Label 6450 2450 2    50   ~ 0
 IO_~CS
-Text Label 6450 3050 2    50   ~ 0
+Text Label 6450 3150 2    50   ~ 0
 IO_IRQ
 $Comp
 L ma4evse:MCP23S08-SO U4
@@ -186,11 +186,9 @@ Wire Wire Line
 Wire Wire Line
 	5700 2650 7500 2650
 Wire Wire Line
-	7800 3050 7800 2650
-Wire Wire Line
 	7800 2650 8000 2650
 Wire Wire Line
-	5700 3050 7800 3050
+	5700 3150 7800 3150
 Wire Wire Line
 	7700 2950 7700 2450
 Wire Wire Line
