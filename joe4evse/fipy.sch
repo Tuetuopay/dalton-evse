@@ -901,4 +901,6 @@ Wire Wire Line
 Connection ~ 8800 5050
 Wire Wire Line
 	8800 5050 8800 5150
+Wire Wire Line
+	7800 3150 7800 2650
 $EndSCHEMATC
