@@ -21,6 +21,8 @@ F 0 "U6" H 6850 1700 50  0000 L CNN
 F 1 "UA741-D" H 6850 1800 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6750 2000 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/slos094g/slos094g.pdf" H 6750 2100 50  0001 C CNN
+F 4 "Ti" H 6700 1950 50  0001 C CNN "Manufacturer"
+F 5 "uA741-D" H 6700 1950 50  0001 C CNN "Manufacturer PN"
 	1    6700 1950
 	1    0    0    -1  
 $EndComp
@@ -235,6 +237,8 @@ F 0 "U7" H 5900 4967 50  0000 C CNN
 F 1 "HCPL0731" H 5900 4876 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5875 4450 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf" H 5875 4450 50  0001 C CNN
+F 4 "ON Semi" H 5900 4450 50  0001 C CNN "Manufacturer"
+F 5 "HCPL0731" H 5900 4450 50  0001 C CNN "Manufacturer PN"
 	1    5900 4450
 	1    0    0    -1  
 $EndComp

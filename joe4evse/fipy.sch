@@ -165,6 +165,8 @@ F 0 "U4" H 8900 2300 50  0000 C CNN
 F 1 "MCP23S08-SO" H 8900 2200 50  0000 C CNN
 F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 8800 2200 50  0001 C CNN
 F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21919e.pdf" H 8800 2200 50  0001 C CNN
+F 4 "Microchip" H 8100 2150 50  0001 C CNN "Manufacturer"
+F 5 "MCP23S08-SO" H 8100 2150 50  0001 C CNN "Manufacturer PN"
 	1    8100 2150
 	1    0    0    -1  
 $EndComp

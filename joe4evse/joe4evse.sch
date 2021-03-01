@@ -21,6 +21,8 @@ F 0 "U2" H 9200 900 50  0000 L CNN
 F 1 "MAX3485" H 9200 1000 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9050 900 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf" H 9050 1650 50  0001 C CNN
+F 4 "Maxim" H 9050 1600 50  0001 C CNN "Manufacturer"
+F 5 "MAX3485" H 9050 1600 50  0001 C CNN "Manufacturer PN"
 	1    9050 1600
 	1    0    0    -1  
 $EndComp
@@ -32,6 +34,8 @@ F 0 "J1" H 1707 1667 50  0000 C CNN
 F 1 "USB_B_Micro" H 1707 1576 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1800 1150 50  0001 C CNN
 F 3 "~" H 1800 1150 50  0001 C CNN
+F 4 "Molex" H 1650 1200 50  0001 C CNN "Manufacturer"
+F 5 "47346-0001" H 1650 1200 50  0001 C CNN "Manufacturer PN"
 	1    1650 1200
 	1    0    0    -1  
 $EndComp
@@ -222,6 +226,8 @@ F 0 "U1" H 3150 1150 50  0000 L CNN
 F 1 "CH340C" H 3150 1050 50  0000 L CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4050 -550 50  0001 C CNN
 F 3 "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF" H 3150 1150 50  0001 C CNN
+F 4 "WCH" H 3150 1000 50  0001 C CNN "Manufacturer"
+F 5 "CH340C" H 3150 1000 50  0001 C CNN "Manufacturer PN"
 	1    3150 1000
 	1    0    0    -1  
 $EndComp
@@ -475,6 +481,7 @@ F 0 "J3" H 1500 3050 50  0000 C CNN
 F 1 "Conn_01x03" H 1500 3150 50  0000 C CNN
 F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 1150 3150 50  0001 C CNN
 F 3 "~" H 1150 3150 50  0001 C CNN
+F 4 "JST" H 1150 3150 50  0001 C CNN "Manufacturer"
 	1    1150 3150
 	-1   0    0    1   
 $EndComp
@@ -505,6 +512,7 @@ F 0 "J4" H 8950 5400 50  0000 L CNN
 F 1 "Conn_01x02" H 8700 5500 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 9000 5300 50  0001 C CNN
 F 3 "~" H 9000 5300 50  0001 C CNN
+F 4 "JST" H 9000 5300 50  0001 C CNN "Manufacturer"
 	1    9000 5300
 	1    0    0    -1  
 $EndComp
@@ -864,37 +872,37 @@ Wire Wire Line
 $Comp
 L ma4evse:JS202011CQN SW1
 U 1 1 5E1C964F
-P 6000 1900
-F 0 "SW1" V 6046 1512 50  0000 R CNN
-F 1 "JS202011CQN" V 5955 1512 50  0000 R CNN
-F 2 "ma4evse:JS202011CQN" H 6000 2100 50  0001 C CNN
-F 3 "~" H 6000 2100 50  0001 C CNN
-	1    6000 1900
+P 6200 1850
+F 0 "SW1" V 6246 1462 50  0000 R CNN
+F 1 "JS202011CQN" V 6155 1462 50  0000 R CNN
+F 2 "ma4evse:JS202011CQN" H 6200 2050 50  0001 C CNN
+F 3 "~" H 6200 2050 50  0001 C CNN
+	1    6200 1850
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6200 2100 6200 2600
+	6400 2050 6400 2250
 Wire Wire Line
-	5800 2100 5800 2600
-Text Label 5800 2600 1    50   ~ 0
+	6000 2050 6000 2150
+Text Label 6000 2650 1    50   ~ 0
 FIPY_RXD
-Text Label 6200 2600 1    50   ~ 0
+Text Label 6400 2650 1    50   ~ 0
 FIPY_TXD
 Wire Wire Line
-	5700 1700 5700 950 
-Text Label 5700 950  3    50   ~ 0
+	5900 1650 5900 900 
+Text Label 5900 900  3    50   ~ 0
 USB_TX
 Wire Wire Line
-	6100 1700 6100 950 
-Text Label 6100 950  3    50   ~ 0
+	6300 1650 6300 900 
+Text Label 6300 900  3    50   ~ 0
 USB_RX
 Wire Wire Line
-	5900 1700 5900 950 
-Text Label 5900 950  3    50   ~ 0
+	6100 1650 6100 1550
+Text Label 6100 900  3    50   ~ 0
 MOD_TX
 Wire Wire Line
-	6300 1700 6300 950 
-Text Label 6300 950  3    50   ~ 0
+	6500 1650 6500 1450
+Text Label 6500 900  3    50   ~ 0
 MOD_RX
 Wire Wire Line
 	10600 4500 10600 4300
@@ -975,6 +983,7 @@ F 0 "J10" H 10850 3700 50  0000 L CNN
 F 1 "Conn_01x02" H 10650 3800 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 10900 3600 50  0001 C CNN
 F 3 "~" H 10900 3600 50  0001 C CNN
+F 4 "JST" H 10900 3600 50  0001 C CNN "Manufacturer"
 	1    10900 3600
 	1    0    0    -1  
 $EndComp
@@ -1101,6 +1110,7 @@ F 0 "J9" H 8450 3700 50  0000 L CNN
 F 1 "Conn_01x02" H 8250 3800 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 8500 3600 50  0001 C CNN
 F 3 "~" H 8500 3600 50  0001 C CNN
+F 4 "JST" H 8500 3600 50  0001 C CNN "Manufacturer"
 	1    8500 3600
 	1    0    0    -1  
 $EndComp
@@ -1214,6 +1224,7 @@ F 0 "J5" H 8950 5500 50  0000 L CNN
 F 1 "Conn_01x03" H 8700 5400 50  0000 L CNN
 F 2 "Connector_JST:JST_NV_B03P-NV_1x03_P5.00mm_Vertical" H 9000 5700 50  0001 C CNN
 F 3 "~" H 9000 5700 50  0001 C CNN
+F 4 "JST" H 9000 5700 50  0001 C CNN "Manufacturer"
 	1    9000 5700
 	1    0    0    -1  
 $EndComp
@@ -1227,6 +1238,7 @@ F 0 "U8" H 5650 7400 50  0000 R CNN
 F 1 "DS18B20Z" H 5650 7300 50  0000 R CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4100 6750 50  0001 C CNN
 F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 4950 7250 50  0001 C CNN
+F 4 "Maxim" H 5100 7000 50  0001 C CNN "Manufacturer"
 	1    5100 7000
 	-1   0    0    -1  
 $EndComp
@@ -1315,6 +1327,7 @@ F 0 "J2" H 10280 1692 50  0000 L CNN
 F 1 "Conn_01x03" H 10280 1601 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 10200 1650 50  0001 C CNN
 F 3 "~" H 10200 1650 50  0001 C CNN
+F 4 "JST" H 10200 1650 50  0001 C CNN "Manufacturer"
 	1    10200 1650
 	1    0    0    -1  
 $EndComp
@@ -1404,6 +1417,7 @@ F 0 "J14" H 6468 3425 50  0000 C CNN
 F 1 "Conn_01x02" H 6468 3516 50  0000 C CNN
 F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 6550 3750 50  0001 C CNN
 F 3 "~" H 6550 3750 50  0001 C CNN
+F 4 "JST" H 6550 3750 50  0001 C CNN "Manufacturer"
 	1    6550 3750
 	1    0    0    1   
 $EndComp
@@ -1530,6 +1544,7 @@ F 0 "U9" H 9950 4350 50  0000 C CNN
 F 1 "74LVC1G02" H 9900 4250 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 9850 4100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 9850 4100 50  0001 C CNN
+F 4 "Ti" H 9850 4100 50  0001 C CNN "Manufacturer"
 	1    9850 4100
 	1    0    0    -1  
 $EndComp
@@ -1565,4 +1580,56 @@ Wire Wire Line
 	1550 2850 1550 2750
 Wire Wire Line
 	1750 2750 1750 3150
+$Comp
+L Device:R_Small R28
+U 1 1 603E29DC
+P 5550 1850
+F 0 "R28" H 5492 1896 50  0000 R CNN
+F 1 "0" H 5492 1805 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5550 1850 50  0001 C CNN
+F 3 "~" H 5550 1850 50  0001 C CNN
+	1    5550 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1950 5650 2150
+Wire Wire Line
+	5650 2150 6000 2150
+Connection ~ 6000 2150
+Wire Wire Line
+	6000 2150 6000 2650
+Wire Wire Line
+	5550 1950 5550 2250
+Wire Wire Line
+	5550 2250 6400 2250
+Connection ~ 6400 2250
+Wire Wire Line
+	6400 2250 6400 2650
+Wire Wire Line
+	5650 1750 5650 1550
+Wire Wire Line
+	5650 1550 6100 1550
+Connection ~ 6100 1550
+Wire Wire Line
+	6100 1550 6100 900 
+Wire Wire Line
+	5550 1750 5550 1450
+Wire Wire Line
+	5550 1450 6500 1450
+Connection ~ 6500 1450
+Wire Wire Line
+	6500 1450 6500 900 
+Text Notes 5400 750  0    50   ~ 0
+On production boards, SW1 is DNP while\nR28 and R29 are to be placed
+$Comp
+L Device:R_Small R29
+U 1 1 603E30D3
+P 5650 1850
+F 0 "R29" H 5709 1896 50  0000 L CNN
+F 1 "0" H 5709 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5650 1850 50  0001 C CNN
+F 3 "~" H 5650 1850 50  0001 C CNN
+	1    5650 1850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
