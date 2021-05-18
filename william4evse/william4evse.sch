@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -44,10 +44,6 @@ Wire Wire Line
 Wire Wire Line
 	6300 3000 6200 3000
 Wire Wire Line
-	5600 4000 5600 3600
-Wire Wire Line
-	5600 3600 6400 3600
-Wire Wire Line
 	6400 3600 6400 3200
 Wire Wire Line
 	6400 3200 6200 3200
@@ -59,10 +55,6 @@ Wire Wire Line
 	6500 3700 6500 3100
 Wire Wire Line
 	6500 3100 6200 3100
-Wire Wire Line
-	5800 4000 5800 3800
-Wire Wire Line
-	5800 3800 4700 3800
 Wire Wire Line
 	4700 3800 4700 3000
 Wire Wire Line
@@ -91,16 +83,14 @@ $EndComp
 $Comp
 L power:+5V #PWR02
 U 1 1 5E3B1D02
-P 5500 2600
-F 0 "#PWR02" H 5500 2450 50  0001 C CNN
-F 1 "+5V" H 5515 2773 50  0000 C CNN
-F 2 "" H 5500 2600 50  0001 C CNN
-F 3 "" H 5500 2600 50  0001 C CNN
-	1    5500 2600
+P 5500 2300
+F 0 "#PWR02" H 5500 2150 50  0001 C CNN
+F 1 "+5V" H 5515 2473 50  0000 C CNN
+F 2 "" H 5500 2300 50  0001 C CNN
+F 3 "" H 5500 2300 50  0001 C CNN
+	1    5500 2300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5500 2600 5500 2700
 Wire Wire Line
 	5400 3750 5400 4000
 NoConn ~ 5200 4000
@@ -143,12 +133,37 @@ NoConn ~ 5800 4800
 NoConn ~ 5900 4800
 Text Label 4800 3800 0    50   ~ 0
 TEST_IN
-Text Label 5750 3500 0    50   ~ 0
+Text Label 5900 3500 0    50   ~ 0
 PWM_OUT
-Text Label 5750 3600 0    50   ~ 0
+Text Label 5900 3600 0    50   ~ 0
 X30_OUT
-Text Label 5750 3700 0    50   ~ 0
+Text Label 5900 3700 0    50   ~ 0
 X6_OUT
 Text Label 6000 3800 0    50   ~ 0
 ERROR_OUT
+Wire Wire Line
+	5600 4000 5600 3800
+Wire Wire Line
+	5600 3800 4700 3800
+Wire Wire Line
+	5800 4000 5800 3600
+Wire Wire Line
+	5800 3600 6400 3600
+$Comp
+L Device:L_Small L1
+U 1 1 60A58CF0
+P 5500 2500
+F 0 "L1" H 5548 2546 50  0000 L CNN
+F 1 "220uH" H 5548 2455 50  0000 L CNN
+F 2 "Inductor_SMD:L_1210_3225Metric" H 5500 2500 50  0001 C CNN
+F 3 "~" H 5500 2500 50  0001 C CNN
+F 4 "C561744" H 5500 2500 50  0001 C CNN "LCSC P/N"
+F 5 "ALCF362924K561" H 5500 2500 50  0001 C CNN "MFR P/N"
+	1    5500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2700 5500 2600
+Wire Wire Line
+	5500 2400 5500 2300
 $EndSCHEMATC
